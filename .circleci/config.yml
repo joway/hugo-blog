@@ -6,9 +6,10 @@ jobs:
     steps:
       - checkout
       - run:
-          name: sync site
+          name: sync git repo
           command: |
             git clone --depth 1 https://${GITHUB_TOKEN}@github.com/joway/blog.git public
+            find ./public -type f -not -name './public/.git' -print0 | xargs -0 rm -rf --
       - run:
           name: build site
           command: |
