@@ -1,0 +1,25 @@
+baseURL = "https://blog.joway.io/"
+languageCode = "en-us"
+title = "Joway's Blog"
+theme = "yinyang"
+DefaultContentLanguage = "cn"
+
+[author]
+  name = "Joway Wang"
+  homepage = "https://joway.io/"
+
+[languages]
+  # [languages.en]
+  #   contentDir = "content/en"
+  #   languageName = "English"
+  #   weight = 1
+  [languages.cn]
+    contentDir = "content/cn"
+    languageName = "Chinese"
+    weight = 2
+
+[permalinks]
+  post = "/:section/"
+
+[params]
+disqus = true
