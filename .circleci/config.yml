@@ -6,6 +6,12 @@ jobs:
     steps:
       - checkout
       - run:
+          name: install
+          command: |
+            apk add --update nodejs nodejs-npm
+            npm config set unsafe-perm true
+            npm install html-minifier -g
+      - run:
           name: sync git repo
           command: |
             git clone --depth 1 https://github.com/joway/blog.git public
@@ -14,6 +20,7 @@ jobs:
           name: build site
           command: |
             make site
+            html-minifier --input-dir ./public --output-dir ./public --collapse-whitespace --file-ext html
       - deploy:
           name: push newest site
           command: |
