@@ -21,14 +21,32 @@ jobs:
           command: |
             make site
             html-minifier --input-dir ./public --output-dir ./public --collapse-whitespace --file-ext html
+      - run:
+          name: setup git
+          command: |
+            git config --global credential.helper 'cache --timeout=120'
+            git config --global user.email "joway.w@gmail.com"
+            git config --global user.name "Joway.CI" 
+      - run:
+          name: push theme yinyang
+          command: |
+            git clone --depth 1 https://github.com/joway/hugo-theme-yinyang.git yinyang
+            find ./yinyang -not -name '.git' -mindepth 1 -maxdepth 1 -print0 | xargs -0 rm -rf --
+            cp -r ./themes/yinyang/* ./yinyang
+            cd ./yinyang
+            if [ -n "$(git status --porcelain)" ]; then
+              git add .
+              git commit -m 'sync theme yinyang'
+              git push -q https://${GITHUB_TOKEN}@github.com/joway/hugo-theme-yinyang.git master --force
+            else
+              echo "no changes";
+            fi
+            cd ..
       - deploy:
           name: push newest site
           command: |
             export msg=$(git log --pretty=format:%s -1)
             cd public
-            git config credential.helper 'cache --timeout=120'
-            git config user.email "joway.w@gmail.com"
-            git config user.name "Joway.CI"
             git add .
             git commit --allow-empty -m "$msg"
             git push -q https://${GITHUB_TOKEN}@github.com/joway/blog.git master --force
