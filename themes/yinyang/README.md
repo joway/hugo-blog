@@ -1,3 +1,24 @@
+# YinYang
+
+[YinYang](https://en.wikipedia.org/wiki/Yin_and_yang) is a black-white theme for [Hugo](https://gohugo.io/).
+
+[Demo](https://blog.joway.io)
+
+## Feature
+
+- minimalist
+- multi-language support
+- [disqus](https://disqus.com) support
+
+## Installation
+
+[Install and Use Theme](https://gohugo.io/themes/installing-and-using-themes/)
+
+## Configuration
+
+#### config.toml
+
+```
 baseURL = "https://blog.joway.io/"
 languageCode = "en-us"
 title = "Joway's Blog"
@@ -24,3 +45,7 @@ extraHead = '<script async src="https://www.googletagmanager.com/gtag/js?id=UA-5
 [[params.socials]]
 name = "About Me"
 link = "https://joway.io"
+[[params.socials]]
+name = "Github"
+link = "https://github.com/joway"
+```
