@@ -1,6 +1,6 @@
 ---
-title: "Theme Reference"
-date: 2018-11-02T11:04:52+08:00
+title: "Coming Soon"
+date: 2018-11-02
 type: "post"
 draft: false
 ---
