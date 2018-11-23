@@ -54,6 +54,7 @@ jobs:
           command: |
             export msg=$(git log --pretty=format:%s -1)
             cd public
+            cp index.xml atom.xml
             if [ -n "$(git status --porcelain)" ]; then
               git add .
               git commit --allow-empty -m "$msg"
