@@ -17,7 +17,7 @@
   <meta property="og:title" content="{{ .Title }} - {{ .Site.Title }}" />
   <meta property="og:type" content="article" />
   <meta name="description" content="{{ .Description }}" />
-  {{ -end }}
+  {{- end }}
 
   <link
     href="https://fonts.googleapis.com/css?family=Arvo|Permanent+Marker"
@@ -38,7 +38,7 @@
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/tomorrow-night.min.css"
   />
-  {{ -end }}
+  {{- end }}
   <link href="{{ "index.xml" | relURL }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}">
   <!-- quicklink require -->
   <script>
