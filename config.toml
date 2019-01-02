@@ -3,6 +3,8 @@ languageCode = "en-us"
 title = "Joway's Blog"
 theme = "yinyang"
 DefaultContentLanguage = "cn"
+enableRobotsTXT = true
+canonifyURLs = true
 
 [author]
   name = "Joway Wang"
@@ -18,9 +20,13 @@ DefaultContentLanguage = "cn"
     languageName = "Chinese"
     weight = 2
 
+[permalinks]
+    post = "/blog/:title/"
+
 [params]
 disqus = "joway" # disqus account name
 extraHead = '<script async src="https://www.googletagmanager.com/gtag/js?id=UA-53624533-8"></script><script src="https://joway.io/analytics.js"></script>'
+description = "试图做一个有建设性的人。"
 [[params.socials]]
 name = "About Me"
 link = "https://joway.io"
