@@ -26,6 +26,7 @@ canonifyURLs = true
 [params]
 disqus = "joway" # disqus account name
 extraHead = '<script async src="https://www.googletagmanager.com/gtag/js?id=UA-53624533-8"></script><script src="https://joway.io/analytics.js"></script>'
+lazyImage = true
 description = "试图做一个有建设性的人。"
 [[params.socials]]
 name = "About Me"
