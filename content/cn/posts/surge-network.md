@@ -69,14 +69,14 @@ surge 支持通过域名或者IP-CIDR来判断需要走哪个代理。这就使�
 	2. 能够访问 k8s 自身的所有机器
 - 配置 surge 代理服务器:
 
-	```
+	```toml
 	SS-SERVER = custom, s0.k8s.com, 8888, rc4, mypassword
 	AWS = custom, s1.k8s.com, 8888, rc4, mypassword
 	K8S = custom, s2.k8s.com, 8888, rc4, mypassword
 	```
 - 部分服务器走国外代理
 	
-	```
+	```toml
 	DOMAIN-SUFFIX,lookup-api.apple.com,SS-SERVER,force-remote-dns
 	DOMAIN,accounts.google.com,SS-SERVER,force-remote-dns
 	DOMAIN-SUFFIX,googleapis.com,SS-SERVER,force-remote-dns
@@ -89,7 +89,7 @@ surge 支持通过域名或者IP-CIDR来判断需要走哪个代理。这就使�
 
 - 配置 surge IP-CIDR 规则使得特定 ip 段走各自代理服务器:
 
-	```
+	```toml
 	IP-CIDR,10.0.0.0/16,DIRECT
 	IP-CIDR,10.1.0.0/16,AWS
 	IP-CIDR,10.2.0.0/16,K8S
@@ -101,7 +101,7 @@ surge 支持通过域名或者IP-CIDR来判断需要走哪个代理。这就使�
 
 完整的 Rule 配置如下:
 
-```
+```toml
 [General]
 loglevel = notify
 skip-proxy = 127.0.0.1, 192.168.0.0/16, 10.0.0.0/8, localhost
