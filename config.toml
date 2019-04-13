@@ -17,7 +17,7 @@ canonifyURLs = true
     weight = 1
   [languages.cn]
     contentDir = "content/cn"
-    languageName = "Chinese"
+    languageName = "简体中文"
     weight = 2
 
 [permalinks]
