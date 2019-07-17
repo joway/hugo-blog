@@ -26,8 +26,8 @@ canonifyURLs = true
 [params]
 disqus = "joway" # disqus account name
 extraHead = '<script async src="https://www.googletagmanager.com/gtag/js?id=UA-53624533-8"></script><script src="https://joway.io/analytics.js"></script>'
-# extraBody = '<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>'
-# postAds = '<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6400651395935595" data-ad-slot="5705651853" data-ad-format="auto" data-full-width-responsive="true"></ins>'
+extraBody = '<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>'
+postAds = '<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6400651395935595" data-ad-slot="5705651853" data-ad-format="auto" data-full-width-responsive="true"></ins>'
 lazyImage = true
 description = "一个试图有建设性的人。"
 favicon = "/logo.png"
