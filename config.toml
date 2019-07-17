@@ -6,6 +6,17 @@ DefaultContentLanguage = "cn"
 enableRobotsTXT = true
 canonifyURLs = true
 
+[related]
+includeNewer = true
+threshold = 80
+toLower = false
+[[related.indices]]
+name = "date"
+weight = 100
+# [[related.indices]]
+# name = "keywords"
+# weight = 100
+
 [author]
   name = "Joway Wang"
   homepage = "https://joway.io/"
