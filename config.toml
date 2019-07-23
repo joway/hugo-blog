@@ -42,6 +42,11 @@ postAds = '<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub
 lazyImage = true
 description = "一个试图有建设性的人。"
 favicon = "/logo.png"
+
+[[params.socials]]
+name = "RSS"
+link = "https://blog.joway.io/atom.xml"
+
 [[params.socials]]
 name = "About Me"
 link = "https://joway.io"
