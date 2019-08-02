@@ -22,7 +22,7 @@ server:
 	hugo server -ws .
 
 site:
-	hugo 
+	hugo --minify
 	find public -type d -print0 | xargs -0 chmod 755
 	find public -type f -print0 | xargs -0 chmod 644
 
