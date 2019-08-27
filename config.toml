@@ -18,7 +18,7 @@ weight = 100
 # weight = 100
 
 [author]
-  name = "Joway Wang"
+  name = "Joway"
   homepage = "https://joway.io/"
 
 [languages]
@@ -40,6 +40,7 @@ extraHead = '<script async src="https://www.googletagmanager.com/gtag/js?id=UA-5
 extraBody = '<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>'
 postAds = '<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6400651395935595" data-ad-slot="5705651853" data-ad-format="auto" data-full-width-responsive="true"></ins>'
 lazyImage = true
+headTitle = "Joway Wang"
 description = "一个试图有建设性的人。"
 favicon = "/logo.png"
 mainSections = ["post"]
