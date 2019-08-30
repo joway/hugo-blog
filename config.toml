@@ -50,5 +50,9 @@ name = "RSS"
 link = "https://blog.joway.io/atom.xml"
 
 [[params.socials]]
+name = "Travel"
+link = "/travel"
+
+[[params.socials]]
 name = "About"
 link = "https://joway.io"
