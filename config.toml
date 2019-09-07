@@ -47,11 +47,15 @@ mainSections = ["posts"]
 
 [[params.socials]]
 name = "RSS"
-link = "https://blog.joway.io/atom.xml"
+link = "/index.xml"
 
 [[params.socials]]
 name = "Travel"
 link = "/travel"
+
+[[params.socials]]
+name = "Kui.Cat"
+link = "/cat"
 
 [[params.socials]]
 name = "About"
