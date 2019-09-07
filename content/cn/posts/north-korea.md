@@ -1,7 +1,6 @@
 ---
 title: 朝鲜 —— 小国寡民的主体思想实践
 date: 2018-07-07
-type: "post"
 draft: false
 aliases: [
     "/游记/north-korea/",

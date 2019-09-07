@@ -1,7 +1,6 @@
 ---
 title: 从程序到人 —— 情头配对助手的前世今生
 date: 2018-09-27
-type: "post"
 draft: false
 aliases: [
     "/编程/avatar-matcher/",

@@ -43,7 +43,7 @@ lazyImage = true
 headTitle = "Joway Wang"
 description = "一个试图有建设性的人。"
 favicon = "/logo.png"
-mainSections = ["post"]
+mainSections = ["posts"]
 
 [[params.socials]]
 name = "RSS"

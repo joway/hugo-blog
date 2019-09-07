@@ -1,7 +1,6 @@
 ---
 title: 欧游散记 —— 西班牙
 date: 2018-03-03
-type: "post"
 draft: false
 aliases: [
     "/游记/spain/",

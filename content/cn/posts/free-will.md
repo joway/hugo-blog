@@ -1,7 +1,6 @@
 ---
 title: 自由意志下的选择
 date: 2019-01-02
-type: "post"
 draft: false
 tags:
 - 黑镜

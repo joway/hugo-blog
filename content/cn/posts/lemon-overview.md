@@ -1,7 +1,6 @@
 ---
 title: "Lemon : Koa 风格的 Python 异步 Web 框架"
 date: 2018-01-08
-type: "post"
 draft: false
 aliases: [
     "/Lemon/lemon-overview/",

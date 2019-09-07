@@ -1,7 +1,6 @@
 ---
 title: 使用 Surge 提升多网络环境下的流畅开发体验
 date: 2018-07-03
-type: "post"
 draft: false
 aliases: [
     "/最佳实践/surge-network/",

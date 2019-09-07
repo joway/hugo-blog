@@ -1,7 +1,6 @@
 ---
 title: SSD 背后的奥秘
 date: 2019-07-09
-type: "post"
 draft: false
 ---
 

@@ -1,7 +1,6 @@
 ---
 title: "How to write a Database - Index"
 date: 2019-07-23
-type: "post"
 draft: false
 ---
 

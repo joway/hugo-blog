@@ -1,7 +1,6 @@
 ---
 title: Make Smartphone Smart Again
 date: 2019-01-08
-type: "post"
 draft: false
 ---
 

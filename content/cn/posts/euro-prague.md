@@ -1,7 +1,6 @@
 ---
 title: 欧游散记 —— 伪君子布拉格
 date: 2018-02-11
-type: "post"
 draft: false
 aliases: [
     "/游记/euro-prague/",

@@ -1,7 +1,6 @@
 ---
 title: "Golang : Make Programming Happy Again"
 date: 2017-12-30
-type: "post"
 draft: false
 ---
 

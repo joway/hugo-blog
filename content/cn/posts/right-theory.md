@@ -1,7 +1,6 @@
 ---
 title: 社会矛盾讨论统一框架的一种可能性
 date: 2018-02-12
-type: "post"
 draft: false
 aliases: [
     "/随想/right-theory/",

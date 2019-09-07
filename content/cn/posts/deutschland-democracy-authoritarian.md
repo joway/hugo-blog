@@ -1,7 +1,6 @@
 ---
 title: "欧游散记 —— 民主专制下的德国"
 date: 2018-03-07
-type: "post"
 draft: false
 aliases: [
     "/游记/deutschland-democracy-authoritarian/",

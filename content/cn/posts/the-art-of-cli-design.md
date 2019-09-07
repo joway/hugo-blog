@@ -1,7 +1,6 @@
 ---
 title: "命令行里的设计艺术"
 date: 2019-01-11
-type: "post"
 draft: false
 ---
 

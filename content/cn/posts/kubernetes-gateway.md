@@ -1,7 +1,6 @@
 ---
 title: Kubernetes 中使用 API Gateway 替代 Ingress
 date: 2017-09-12
-type: "post"
 draft: false
 aliases: [
     "/ops/kubernetes-gateway/",

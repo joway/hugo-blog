@@ -1,7 +1,6 @@
 ---
 title: 关于自由的偏见
 date: 2018-04-05
-type: "post"
 draft: false
 aliases: [
     "/随想/liberal-think-chip/",

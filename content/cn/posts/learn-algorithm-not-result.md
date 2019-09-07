@@ -1,7 +1,6 @@
 ---
 title: 学习思维方式而非学习观点
 date: 2018-11-26
-type: "post"
 draft: false
 ---
 
