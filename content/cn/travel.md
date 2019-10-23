@@ -39,6 +39,36 @@ var targetSVG = "M9,0C4.029,0,0,4.029,0,9s4.029,9,9,9s9-4.029,9-9S13.971,0,9,0z 
  */
 const cities = [
   {
+    "title": "Takamatsu",
+    "latitude": 34.2728006,
+    "longitude": 133.9080959,
+  },
+  {
+    "title": "Shiraz",
+    "latitude": 32.8133972,
+    "longitude": 52.9099841,
+  },
+  {
+    "title": "Isfahan",
+    "latitude": 34.6930788,
+    "longitude": 52.3530197,
+  },
+  {
+    "title": "Isfahan",
+    "latitude": 34.6930788,
+    "longitude": 52.3530197,
+  },
+  {
+    "title": "Kashan",
+    "latitude": 34.0650114,
+    "longitude": 52.2084415,
+  },
+  {
+    "title": "Tehran",
+    "latitude": 33.9218242,
+    "longitude": 52.9847321,
+  },
+  {
     "title": "Kamakura",
     "latitude": 35.303188,
     "longitude": 139.565704,
