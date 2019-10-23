@@ -8,7 +8,7 @@ workflows:
 jobs:
   build:
     docker:
-      - image: cibuilds/hugo:latest
+      - image: cibuilds/hugo:0.57
     steps:
       - checkout
       - run:
