@@ -332,6 +332,10 @@ var map = AmCharts.makeChart( "travelmap", {
             {
                 "id": "JP",
                 "showAsSelected": true
+            },
+            {
+                "id": "IR",
+                "showAsSelected": true
             }
         ],
   },
