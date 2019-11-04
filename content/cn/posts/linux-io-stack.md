@@ -6,7 +6,7 @@ draft: false
 
 在 Linux 中，所有外部资源都以文件形式作为一个抽象视图，并提供一套统一的接口给应用程序调用。本文将以宏观视角试图阐述 Linux 中关于文件 IO 的整个调用脉络。
 
-![](../../images/linux-io/io-stack.png)
+![](/images/linux-io/io-stack.png)
 
 # VFS
 
@@ -16,7 +16,7 @@ draft: false
 
 VFS 自顶向下使用四个数据结构来描述文件：
 
-![](../../images/linux-io/vfs-struct.png)
+![](/images/linux-io/vfs-struct.png)
 
 - file: 存放一个文件对象的信息。
 
@@ -104,7 +104,7 @@ struct inode {
 
 如果删除了原始文件的话，软链接会直接生效，但是硬链接依旧存在，因为 inode 的计数并没有变成0，所以对于硬链接而言，事实上原始文件并没有删除。
 
-![](../../images/linux-io/link.png)
+![](/images/linux-io/link.png)
 
 ### Page Cache
 
@@ -133,7 +133,7 @@ struct inode {
 
 下图展示了读取文件 /var/log/messages 的完整过程：
 
-![](../../images/linux-io/writes.png)
+![](/images/linux-io/writes.png)
 
 目前人们常用通用文件系统有 ext4 和 xfs。而在诸多细分领域，针对不同场景有非常多的新文件系统在近些年诞生。例如对于海量小文件（常见的图片、静态资源）的存储，有  FastDFS ，对 SSD 有专门优化的 JFFS2。FastDFS 通过在文件系统层把小文件合并成大文件，从而减轻大量小文件对系统的开销。而 JFFS2 通过把 data 和 metadata 在 SSD 上顺序存储，并使用 ouf-of-place 的方式更新，来减轻对 SSD 寿命的影响。
 
@@ -143,7 +143,7 @@ struct inode {
 
 ## FUSE
 
-![](../../images/linux-io/fuse.png)
+![](/images/linux-io/fuse.png)
 
 FUSE 全称 Filesystem in Userspace，是一个支持用户在用户态编写文件系统代码的内核模块，在 Linux 2.6.14 后开始支持。一般多用于分布式文件系统，例如 hdfs，ceph，s3fs 等。
 
