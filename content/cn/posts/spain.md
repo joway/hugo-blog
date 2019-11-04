@@ -11,13 +11,13 @@ aliases: [
 
 公园前1世纪，罗马人驱逐了伊比利亚半岛上的凯尔特伊比利亚人，并划分为近西班牙省、远西班牙省。在西班牙建立了完善的市镇体制和基督教信仰。西班牙虽然当时只是罗马的两个行省，却诞生过三任罗马皇帝，其中最著名的有图拉真和哈德良皇帝。如今在塞哥维亚还能看到保存良好的古罗马水道桥。
 
-![古罗马水道桥](https://cdn.joway.io/images/1520026320.png?imageMogr2/thumbnail/!70p)
+![古罗马水道桥](/images/old-blog/1520026320.png?imageMogr2/thumbnail/!70p)
 
 > 塞哥维亚古罗马水道桥
 
 公元5世纪，罗马帝国衰落，西哥特人控制了伊比利亚的大部分土地，建立西哥特王国，并定都托莱多。西哥特国王之后也改信了罗马天主教。
 
-![托莱多](https://cdn.joway.io/images/1520026996.png?imageMogr2/thumbnail/!70p)
+![托莱多](/images/old-blog/1520026996.png?imageMogr2/thumbnail/!70p)
 
 > 托莱多古城
 
@@ -29,18 +29,18 @@ aliases: [
 
 在伊斯兰统治时期，穆斯林对异教十分宽容，使得西班牙同时居住着大量犹太人。今天我们去一些老城区还会看到很多精致幽静的社区，都是当年犹太人遗留下来的痕迹。
 
-![](https://cdn.joway.io/images/1520027310.png?imageMogr2/thumbnail/!70p)
-![](https://cdn.joway.io/images/1520027376.png?imageMogr2/thumbnail/!70p)
-![](https://cdn.joway.io/images/1520027245.png?imageMogr2/thumbnail/!70p)
+![](/images/old-blog/1520027310.png?imageMogr2/thumbnail/!70p)
+![](/images/old-blog/1520027376.png?imageMogr2/thumbnail/!70p)
+![](/images/old-blog/1520027245.png?imageMogr2/thumbnail/!70p)
 
 > 格拉纳达的阿尔罕布拉宫
 
-![](https://cdn.joway.io/images/1520027475.png?imageMogr2/thumbnail/!70p)
+![](/images/old-blog/1520027475.png?imageMogr2/thumbnail/!70p)
 
 > 格拉纳达的摩尔人庭院
 
-![](https://cdn.joway.io/images/1520027588.png?imageMogr2/thumbnail/!70p)
-![](https://cdn.joway.io/images/1520027800.png?imageMogr2/thumbnail/!70p)
+![](/images/old-blog/1520027588.png?imageMogr2/thumbnail/!70p)
+![](/images/old-blog/1520027800.png?imageMogr2/thumbnail/!70p)
 
 > 塞维利亚的摩尔人王宫
 
@@ -49,15 +49,15 @@ aliases: [
 基督教重新掌权后，放弃了穆斯林之前的开明宗教策略，不仅改建或摧毁了清真寺，还开始了对犹太人大规模的驱逐和屠杀，导致西班牙犹太人开始了新的流亡生涯。今天北美就有很多西班牙犹太人后裔。
 
 
-![](https://cdn.joway.io/images/1520028281.png?imageMogr2/thumbnail/!70p)
+![](/images/old-blog/1520028281.png?imageMogr2/thumbnail/!70p)
 
 > 塞哥维亚全景
 
-![](https://cdn.joway.io/images/1520028209.png?imageMogr2/thumbnail/!70p)
+![](/images/old-blog/1520028209.png?imageMogr2/thumbnail/!70p)
 
 > 塞哥维亚主教堂
 
-![](https://cdn.joway.io/images/1520027989.png?imageMogr2/thumbnail/!70p)
+![](/images/old-blog/1520027989.png?imageMogr2/thumbnail/!70p)
 
 > 塞哥维亚主教堂里的哥伦布遗骨
 

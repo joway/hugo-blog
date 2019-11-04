@@ -11,11 +11,11 @@ aliases: [
 
 情头(情侣头像)一般指成双成对的头像，可以是真人照片，也可以是卡通人物等图片。衍生出去还有闺密头像和基友头像等等。
 
-![](https://cdn.joway.io/images/1538015444.png?imageMogr2/thumbnail/!70p)
+![](/images/old-blog/1538015444.png?imageMogr2/thumbnail/!70p)
 
 社交媒体上有一个非常令人费解的现象是，如果你去即刻、豆瓣、百度贴吧、微博，会发现有大量的人在上面贴了一个头像，然后寻找和它匹配的另一半头像，例如这样:
 
-![](https://cdn.joway.io/images/1538016090.png?imageMogr2/thumbnail/!70p)
+![](/images/old-blog/1538016090.png?imageMogr2/thumbnail/!70p)
 
 市面上的情侣头像大多是一些社区里的大佬自己制作出来的，然后发到社区里，再慢慢流传开来。这种传播方式导致了很多情头在传播时候早就被拆散了。很多人可能只找到了其中一个，但是想要找到和它配对的另一半。
 
@@ -25,13 +25,13 @@ aliases: [
 
 第一个是目前搜索引擎的识别图片能力其实并不强，比如以 All in AI 著称的百度:
 
-![](https://cdn.joway.io/images/1538016451.png?imageMogr2/thumbnail/!70p)
+![](/images/old-blog/1538016451.png?imageMogr2/thumbnail/!70p)
 
 这还是在图片是原图的情况下，经常一些小朋友会在情头上自己二次创作，比如裁剪，比如压缩，比如贴上什么爱心。那样基本上识图就废了。
 
 第二个问题更加有趣，情头的特点就是大家都在用，所以在最理想的情况下，即便搜索引擎能够识别出所有有这个头像的网站，出来的结果也并没有什么用处，无非是找到了也在用这个头像的别的网站的用户。
 
-![](https://cdn.joway.io/images/1538016570.png?imageMogr2/thumbnail/!70p)
+![](/images/old-blog/1538016570.png?imageMogr2/thumbnail/!70p)
 
 只有一种情况是真正能够帮助到寻找情侣头像这件事情的，那就是搜索引擎出来的结果里是专门搜集匹配好的情头的站点。那样姑且用户还能点进网页里去找到另外一半。
 
@@ -72,11 +72,11 @@ aliases: [
 
 数据库上选择了 ElastiSearch , 并且写了一个 [elasticsearch-hamming-plugin](https://github.com/joway/elasticsearch-hamming-plugin) 来计算 phash 字段的汉明距离。
 
-![](https://cdn.joway.io/images/1538027425.png?imageMogr2/thumbnail/!70p)
+![](/images/old-blog/1538027425.png?imageMogr2/thumbnail/!70p)
 
 由于我一直找不到一个合适的汉明距离值，另外我必须确保自己找的结果一定是正确的，如果我告诉他找到了最后找的结果却是错的，给人的体验非常不好。所以我现在是只有百分百匹配到了 phash 值才会告诉他找到了，否则会推荐给他相似的头像，例如:
 
-![](https://cdn.joway.io/images/1538021809.png?imageMogr2/thumbnail/!70p)
+![](/images/old-blog/1538021809.png?imageMogr2/thumbnail/!70p)
 
 上面示例里我使用的图片的长宽比例是被我调整过的，所以数据库里不会有严格匹配到的头像，但是通过 phash 汉明距离能够轻易找到相似图片，所以能够在`猜你喜欢`里呈现出结果。这个是好的 case，在坏的 case 里，由于本来就是`猜你喜欢`所以就算结果不正确，也完全可以接受。事实上大部分时候都是正确的。
 
@@ -88,7 +88,7 @@ aliases: [
 
 所以在产品化的时候，我把这个工具的呈现方式封装成了一个叫"情侣头像小助手"的用户，例如下面这种效果:
 
-![](https://cdn.joway.io/images/1538025863.png?imageMogr2/thumbnail/!70p)
+![](/images/old-blog/1538025863.png?imageMogr2/thumbnail/!70p)
 
 这个机器人已经运行了近一年的时间，我花了一个周末写完以后也没有时间去优化过它，目前它已经累积学习到了20万个情侣头像，积累了4669个粉丝。有无数人和她对话和说感谢。这听起来就非常赛博朋克。
 

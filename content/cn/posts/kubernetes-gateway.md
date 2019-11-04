@@ -100,7 +100,7 @@ Orange 基于 Openresty 开发，仿照了 Kong 的思想 , 使用了更加简�
 
 例如 ，我原先需要这样一个表单 :
 
-![](https://cdn.joway.io/images/1505148736.png?imageMogr2/thumbnail/!70p)
+![](/images/old-blog/1505148736.png?imageMogr2/thumbnail/!70p)
 
 它有一个问题是 , 我需要人肉把一个表单在大脑内编译成一个 nginx 的配置规则， 如果你的一个域名后面有100个后端服务，你这个表单就需要写100次，且无法复用表单。
 
@@ -112,7 +112,7 @@ Orange 基于 Openresty 开发，仿照了 Kong 的思想 , 使用了更加简�
 	
 	then proxy : http://service-name:port
 
-![](https://cdn.joway.io/images/1505148844.png?imageMogr2/thumbnail/!70p)
+![](/images/old-blog/1505148844.png?imageMogr2/thumbnail/!70p)
 
 你只要在这里面不停添加规则就行了 , 如果两个后端服务只有一个条件是不同的，你只要写一个 OR 就行了 , 可以非常完美的复用配置 。
 
@@ -128,10 +128,10 @@ Kong 是另外一个非常活跃的项目 , 专门针对微服务设计的，支
 
 我使用的是 konga (https://github.com/pantsel/konga) 这个项目。从 UI 上讲也是非常美观的，但是功能上还是比 Orange 要复杂和难用。但是由于 kong 整个社区的背书，我最终还是选择了它。
 
-![](https://cdn.joway.io/images/1505150036.png?imageMogr2/thumbnail/!70p)
+![](/images/old-blog/1505150036.png?imageMogr2/thumbnail/!70p)
 
 
-![](https://cdn.joway.io/images/1505150092.png?imageMogr2/thumbnail/!70p)
+![](/images/old-blog/1505150092.png?imageMogr2/thumbnail/!70p)
 
 值得注意的是，kong 支持重试策略 ，这个功能有利有弊，好处是当后端服务不稳定的时候，比如访问100次有5次超时，这个时候对客户端而言顶多有几个服务慢了一些时间而已，不至于失败。但坏处是，一旦流量来了一波高峰，导致后端服务被压跨了一部分，但它还在不停重试，导致流量被放大，从而后端服务更加无法恢复过来，最后雪崩。关于这个我并没有在 Kong 里找到相应应对措施配置，但如果是自己写的话，其实可以做一个一定时间全局最大重试次数来加以控制。
 

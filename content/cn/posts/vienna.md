@@ -15,21 +15,21 @@ aliases: [
 
 维也纳的自动化程度也是在欧洲国家里极其罕见的。印象最深的是，我在从进入机场到上飞机，基本上没有秏费任何一个劳动力的协助。很多机场再智能最后还是要一个乘务员来检票和检查护照，但维也纳机场是自己扫码上机，并且不需要检查护照。去超市买东西，也都是完全自主扫码结单，大部分工作人员都在忙着上架商品，只有一个收银台是在人工运营。我在维也纳住的一个青年旅舍，在到之前它邮箱发给了我一个Code，我到了以后可以用那个Code开旅馆大门、我房间门和我床位的锁，第一次开就代表了Check In完成。去客厅买食物也完全是售货机。在旅馆的两天，除了清洁工以外，我没有见到过一个工作人员，这种体验真的是太完美了。
 
-![](https://cdn.joway.io/images/1520108053.png?imageMogr2/thumbnail/!70p)
+![](/images/old-blog/1520108053.png?imageMogr2/thumbnail/!70p)
 
 > 青旅
 
 作为全球最宜居的城市，维也纳无论是环境还是市政都配得上这个称号。如果全世界让我随便移民的话，可能首选就是维也纳。尤其是如果我还有孩子家庭的话，维也纳几乎可以算是不二之选。整个城市有大量的植被覆盖，公园密度覆盖高，公共交通极其发达，冬天还有各种自造的溜冰场 。较之伦敦巴黎纽约又没有那么多的游客，而且奥地利这个国家本身在国际社会上也非常低调，几乎可以算是岁月静好的现实定义了。
 
-![](https://cdn.joway.io/images/1520108392.png?imageMogr2/thumbnail/!70p)
+![](/images/old-blog/1520108392.png?imageMogr2/thumbnail/!70p)
 
 > 市中心溜冰场
 
-![](https://cdn.joway.io/images/1520109185.png?imageMogr2/thumbnail/!70p)
+![](/images/old-blog/1520109185.png?imageMogr2/thumbnail/!70p)
 
 > 公园
 
-![](https://cdn.joway.io/images/1520109267.png?imageMogr2/thumbnail/!70p)
+![](/images/old-blog/1520109267.png?imageMogr2/thumbnail/!70p)
 
 > 植被覆盖
 

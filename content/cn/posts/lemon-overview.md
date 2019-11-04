@@ -113,15 +113,15 @@ Lemon 目前还只是一个 alpha 的版本 , 并不建议在生产环境上用�
 
 #### Lemon
 
-![Lemon](https://cdn.joway.io/images/1515340517.png?imageMogr2/thumbnail/!70p)
+![Lemon](/images/old-blog/1515340517.png?imageMogr2/thumbnail/!70p)
 
 #### Sanic
 
-![Sanic](https://cdn.joway.io/images/1515340610.png?imageMogr2/thumbnail/!70p)
+![Sanic](/images/old-blog/1515340610.png?imageMogr2/thumbnail/!70p)
 
 #### Flask
 
-![Flask](https://cdn.joway.io/images/1515340570.png?imageMogr2/thumbnail/!70p)
+![Flask](/images/old-blog/1515340570.png?imageMogr2/thumbnail/!70p)
 
 测试结果很符合预期，因为和 Sanic 用的底层技术都差不多，所以两者性能几乎一样。之后会做更为广泛和专业的测试。
 
