@@ -295,3 +295,11 @@ Count-Min 算法和布隆过滤器类似，核心思想还是通过将相同 Has
 # 总结
 
 经过一系列的步骤，我们终于实现了一个满足我们要求的现代内存缓存系统。可以看到，在缓存系统的设计中，对性能影响最大的是缓存的存储层，需要非常小心地进行锁的设计和优化。而对于缓存系统命中率影响最大，同时也是实现算法上最复杂的还是淘汰策略的选择。现代的许多内存缓存系统所选择的淘汰策略各有不同，许多都在现有的算法基础上做过一些自己的修改。即便一些缓存系统在 Benchmark 中非常优秀，但如果其测试数据访问模式与你的实际使用场景并不一致，它的数据对你的参考意义也并不大。所以依旧需要针对性地进行模拟压测才能够知道什么样的缓存系统适合你业务的场景。
+
+# 参考资料
+
+- [Design Of A Modern Cache](http://highscalability.com/blog/2016/1/25/design-of-a-modern-cache.html)
+- [TinyLFU: A Highly Efficient Cache Admission Policy](https://arxiv.org/abs/1512.00727)
+- [Introducing Ristretto: A High-Performance Go Cache](https://blog.dgraph.io/post/introducing-ristretto-high-perf-go-cache/)
+- [The State of Caching in Go](https://blog.dgraph.io/post/caching-in-go/)
+- [你应该知道的缓存进化史](https://juejin.im/post/5b7593496fb9a009b62904fa)
