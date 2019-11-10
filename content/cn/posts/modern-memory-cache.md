@@ -261,7 +261,7 @@ TinyLFU 利用 LFU 作为写入过滤器，只有当新来的 key 的频率大�
 
 ![](/images/modern-memory-cache/04.png)
 
-W-TinyLFU 算法吸收了上述算法的优点，在 TinyLFU 前面放了一个基于 LRU 的 Window Cache，从而可以使得前面提到的突发性稀疏流量会缓存在 Window Cache 里，只有在 Window Cache 里被淘汰的缓存才会过继给后面的 TinyLFU。至于最后的 Main Cache，虽然 W-TinyLFU 使用了分段式 LRU 来实现，但我们也可以根据实际情况修改使其符合我们需要的常见。
+W-TinyLFU 算法吸收了上述算法的优点，在 TinyLFU 前面放了一个基于 LRU 的 Window Cache，从而可以使得前面提到的突发性稀疏流量会缓存在 Window Cache 里，只有在 Window Cache 里被淘汰的缓存才会过继给后面的 TinyLFU。至于最后的 Main Cache，虽然 W-TinyLFU 使用了分段式 LRU 来实现，但我们也可以根据实际情况修改使其符合我们需要的场景。
 
 TinyLFU && W-TinyLFU 算法是由 Gil Einziger、Roy Friedman 和 Ben Manes 三人在 15 年共同写的论文：[TinyLFU: A Highly Efficient Cache Admission Policy](https://arxiv.org/abs/1512.00727) 所提出来的，后来 Ben Manes 还依照这个算法写了一个 Java 领域备受欢迎的缓存系统 [Caffeine](https://github.com/ben-manes/caffeine)。
 
