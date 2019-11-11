@@ -8,13 +8,15 @@ workflows:
 jobs:
   build:
     docker:
-      - image: cibuilds/hugo:0.57
+      - image: circleci/golang:1.12
     steps:
       - checkout
       - run:
           name: install
           command: |
-            go install github.com/tdewolff/minify/cmd/minify
+            apk add --update git
+            go get github.com/gohugoio/hugo@v0.59.1
+            go get github.com/tdewolff/minify/cmd/minify
       - run:
           name: sync git repo
           command: |
