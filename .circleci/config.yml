@@ -14,9 +14,7 @@ jobs:
       - run:
           name: install
           command: |
-            apk add --update nodejs nodejs-npm
-            npm config set unsafe-perm true
-            npm install html-minifier -g
+            go install github.com/tdewolff/minify/cmd/minify
       - run:
           name: sync git repo
           command: |
@@ -26,7 +24,6 @@ jobs:
           name: build site
           command: |
             make site
-            html-minifier --input-dir ./public --output-dir ./public --collapse-whitespace --file-ext html
       - run:
           name: setup git
           command: |
