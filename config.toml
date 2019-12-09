@@ -17,6 +17,11 @@ weight = 100
 # name = "keywords"
 # weight = 100
 
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
 [author]
   name = "Joway"
   homepage = "https://joway.io/"
