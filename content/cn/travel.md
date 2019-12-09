@@ -7,7 +7,6 @@ draft: false
 
 <!-- HTML -->
 <div id="travelmap"></div>
-<a href='https://openflights.org/user/jowaywang' target='_blank'><img src='https://openflights.org/banner/jowaywang.png' width="100%"></a>
 
 <!-- Styles -->
 <style>
