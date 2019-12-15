@@ -49,7 +49,7 @@ headTitle = "Joway Wang"
 description = "一个试图有建设性的人。"
 favicon = "/logo.png"
 mainSections = ["posts"]
-# staticPrefix = "https://cdn.jsdelivr.net/gh/joway/blog"
+staticPrefix = "https://cdn.jsdelivr.net/gh/joway/blog"
 
 [[params.socials]]
 name = "RSS"
