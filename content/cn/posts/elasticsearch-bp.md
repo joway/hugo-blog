@@ -1,6 +1,7 @@
 ---
 title: "ElasticSearch 最佳实践"
 date: 2017-05-28
+categories: ['技术']
 draft: false
 aliases: [
     "/ops/elasticsearch-bp/",

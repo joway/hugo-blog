@@ -2,6 +2,7 @@
 title: 欧游散记 —— 维也纳
 date: 2018-03-04
 draft: false
+categories: ['旅行']
 aliases: [
     "/游记/vienna/",
 ]

@@ -1,6 +1,7 @@
 ---
 title: 即刻多端实时通信实践
 date: 2018-09-18
+categories: ['技术']
 draft: false
 aliases: [
     "/ops/socket-io/",

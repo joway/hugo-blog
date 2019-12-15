@@ -1,7 +1,6 @@
 ---
 title: 主客观与民主边界
 date: 2019-03-11
-type: post
 draft: true
 ---
 

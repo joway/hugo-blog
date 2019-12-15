@@ -1,6 +1,7 @@
 ---
 title: 伊朗见闻录
 date: 2019-12-14
+categories: ['旅行']
 draft: false
 ---
 

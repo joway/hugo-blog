@@ -1,6 +1,7 @@
 ---
 title: 深入理解 Lucene 工作原理
 date: 2018-11-21
+categories: ['技术']
 draft: true
 ---
 

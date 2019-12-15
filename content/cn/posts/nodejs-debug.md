@@ -1,6 +1,7 @@
 ---
 title: NodeJS 内存泄漏检测与定位
 date: 2019-11-10
+categories: ['技术']
 draft: false
 ---
 

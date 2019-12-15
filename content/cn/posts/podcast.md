@@ -1,6 +1,7 @@
 ---
 title: Podcast 闲言碎语
 date: 2017-10-10
+categories: ['随笔']
 draft: false
 aliases: [
     "/随想/podcast/",

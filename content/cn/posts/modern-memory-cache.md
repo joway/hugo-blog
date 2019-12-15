@@ -1,6 +1,7 @@
 ---
 title: 设计实现高性能本地内存缓存
 date: 2019-11-10
+categories: ['技术']
 draft: false
 ---
 

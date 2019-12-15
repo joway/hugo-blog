@@ -1,6 +1,7 @@
 ---
 title: "Golang : Make Programming Happy Again"
 date: 2017-12-30
+categories: ['技术']
 draft: false
 ---
 
