@@ -15,8 +15,8 @@ jobs:
           name: install
           command: |
             sudo apt install -y git
-            go get github.com/gohugoio/hugo
-            go get github.com/tdewolff/minify/cmd/minify
+            GO111MODULE=on go get github.com/gohugoio/hugo
+            GO111MODULE=on go get github.com/tdewolff/minify/cmd/minify
       - run:
           name: sync git repo
           command: |
