@@ -51,6 +51,11 @@ favicon = "/logo.png"
 mainSections = ["posts"]
 staticPrefix = "https://cdn.jsdelivr.net/gh/joway/blog"
 
+
+[[params.socials]]
+name = "Buy"
+link = "https://jstore.codefuture.top/store/5e01cf5945988500186a551e"
+
 [[params.socials]]
 name = "RSS"
 link = "/index.xml"
