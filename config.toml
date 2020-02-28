@@ -53,20 +53,16 @@ staticPrefix = "https://cdn.jsdelivr.net/gh/joway/blog"
 
 
 [[params.socials]]
-name = "Buy"
-link = "https://jstore.codefuture.top/store/5e01cf5945988500186a551e"
+name = "Subscribe"
+link = "https://mailchi.mp/a1a0d59e7a19/joway"
 
 [[params.socials]]
 name = "RSS"
 link = "/index.xml"
 
 [[params.socials]]
-name = "Map"
+name = "Travel"
 link = "/travel"
-
-[[params.socials]]
-name = "Kui.Cat"
-link = "/cat"
 
 [[params.socials]]
 name = "About"
