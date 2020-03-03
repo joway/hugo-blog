@@ -50,7 +50,8 @@ description = "一个试图有建设性的人。"
 favicon = "/logo.png"
 mainSections = ["posts"]
 staticPrefix = "https://cdn.jsdelivr.net/gh/joway/blog"
-
+postHeaderContent = ""
+postFooterContent = "<br/><br/><p>更多文章更新，请订阅：<a target='_blank' href='https://mailchi.mp/a1a0d59e7a19/joway'>Joway's Blog</a></p>"
 
 [[params.socials]]
 name = "Subscribe"
