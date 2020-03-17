@@ -142,7 +142,7 @@ draft: false
 
 ### 使用 sync.Map 实现无锁
 
-![](/images/modern-memory-cache/02.png)
+![](https://ik.imagekit.io/elsetech/blog/images/modern-memory-cache/02.png)
 
 > 图片来源: [如何设计并实现一个线程安全的 Map ？(下篇)](https://halfrost.com/go_map_chapter_two/)
 
@@ -150,7 +150,7 @@ draft: false
 
 ### 设计
 
-![](/images/modern-memory-cache/01.png)
+![](https://ik.imagekit.io/elsetech/blog/images/modern-memory-cache/01.png)
 
 ## 访问记录队列
 
@@ -170,7 +170,7 @@ draft: false
 
 ### 环形缓冲：RingBuffer
 
-![](/images/modern-memory-cache/05.png)
+![](https://ik.imagekit.io/elsetech/blog/images/modern-memory-cache/05.png)
 
 RingBuffer 是一个非常简单的环形缓冲队列，由一个数组，加上一个读指针和写指针构成。读指针永远只能读到写指针前的数据。
 
@@ -178,7 +178,7 @@ RingBuffer 是一个非常简单的环形缓冲队列，由一个数组，加上
 
  Golang 自带的 `sync.Pool` 可以非常好地和 Ring Buffer 协同工作，实现在近乎无锁的情况下，构造出一个线程安全的高吞吐缓冲队列。
 
-![](/images/modern-memory-cache/06.png)
+![](https://ik.imagekit.io/elsetech/blog/images/modern-memory-cache/06.png)
 
 > 图片来源：[A Brief Analysis of Golang Sync.Pool](https://programmer.group/a-brief-analysis-of-golang-sync.pool.html)
 
@@ -237,7 +237,7 @@ RingBuffer 是一个非常简单的环形缓冲队列，由一个数组，加上
 
 ### 设计
 
-![](/images/modern-memory-cache/09.png)
+![](https://ik.imagekit.io/elsetech/blog/images/modern-memory-cache/09.png)
 
 ## 驱逐器
 
@@ -256,11 +256,11 @@ LFU 的问题在于，经常会有一些数据在某时刻非常极其热门，�
 
 TinyLFU 利用 LFU 作为写入过滤器，只有当新来的 key 的频率大于需要被驱逐的 key 时，此时才会执行写入，否则只进行频率信息的累加。也就是说所有新的 key 都会有一个被预热的过程才能够「够格」被写入缓存中。
 
-![](/images/modern-memory-cache/08.png)
+![](https://ik.imagekit.io/elsetech/blog/images/modern-memory-cache/08.png)
 
 但此时会存在的一个问题是，当有突发性的稀疏流量（sparse bursts）进来时，他们会由于一直无法建立足够的频率使得自己被缓存系统而接纳，从而导致击穿了缓存。为了解决这个问题，于是又有了 W-TinyLFU。
 
-![](/images/modern-memory-cache/04.png)
+![](https://ik.imagekit.io/elsetech/blog/images/modern-memory-cache/04.png)
 
 W-TinyLFU 算法吸收了上述算法的优点，在 TinyLFU 前面放了一个基于 LRU 的 Window Cache，从而可以使得前面提到的突发性稀疏流量会缓存在 Window Cache 里，只有在 Window Cache 里被淘汰的缓存才会过继给后面的 TinyLFU。至于最后的 Main Cache，虽然 W-TinyLFU 使用了分段式 LRU 来实现，但我们也可以根据实际情况修改使其符合我们需要的场景。
 
@@ -277,7 +277,7 @@ TinyLFU && W-TinyLFU 算法是由 Gil Einziger、Roy Friedman 和 Ben Manes 三�
 
 ### 频率计数器：Count-Min Sketch
 
-![](/images/modern-memory-cache/03.png)
+![](https://ik.imagekit.io/elsetech/blog/images/modern-memory-cache/03.png)
 
 Count-Min 算法和布隆过滤器类似，核心思想还是通过将相同 Hash 值的数据共享同一份存储空间，以减小整体体积。h1~hd 代表不同的 Hash 算法，这里的 value 代表我们要存储的 key，横坐标表示 Hash 后的值，对哈希值对应每个网格进行 +1 操作。当需要计算某个 key 的估计值时，取对应所有网格数值的最小值。
 
@@ -285,7 +285,7 @@ Count-Min 算法和布隆过滤器类似，核心思想还是通过将相同 Has
 
 ### 设计
 
-![](/images/modern-memory-cache/07.png)
+![](https://ik.imagekit.io/elsetech/blog/images/modern-memory-cache/07.png)
 
 # 总结
 

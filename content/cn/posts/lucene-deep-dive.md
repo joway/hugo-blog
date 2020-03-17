@@ -20,7 +20,7 @@ Lucene 内部的存储结构自顶向下分为:
 	- TermId: 全局唯一
 4. Posting 里有 ...
 
-![](/images/lucene-inverted-index.png)
+![](https://ik.imagekit.io/elsetech/blog/images/lucene-inverted-index.png)
 
 ### 文件结构
 

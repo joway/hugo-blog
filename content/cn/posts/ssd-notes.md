@@ -11,8 +11,8 @@ draft: false
 
 在了解 SSD 性质前，简单回顾下 SSD 的基本结构组成，下面是两张 SSD 的架构图：
 
-![](/images/ssd-architecture.jpg)
-![](/images/samsungssd840pro.jpg)
+![](https://ik.imagekit.io/elsetech/blog/images/ssd-architecture.jpg)
+![](https://ik.imagekit.io/elsetech/blog/images/samsungssd840pro.jpg)
 
 其中，SSD Controller 用以执行耗损平衡、垃圾回收、坏快映射、错误检查纠正、加密等功能。相比与 HDD，它的工作非常繁重，而这些工作极大地影响了 SSD 的性能表现，后文会详细谈到。SSD 内部的闪存（Flash）由一个个闪存单元组成，每个闪存单元都有一个寿命，超过寿命将导致坏块。常见有三种闪存单元类型：
 
@@ -22,11 +22,11 @@ draft: false
 
 每种 NAND 类型有不同的性能和寿命表现，如下表：
 
-![](/images/nand-type-table.png)
+![](https://ik.imagekit.io/elsetech/blog/images/nand-type-table.png)
 
 闪存单元内部由一个个 Block 组成，每个 Block 由多个 Page 组成。
 
-![](/images/ssd_nand_flash.png)
+![](https://ik.imagekit.io/elsetech/blog/images/ssd_nand_flash.png)
 
 对于闪存的访问有以下限制：
 
@@ -47,7 +47,7 @@ SSD 在擦除整个 Block 时，需要先整理其中的 Page，腾出没有活�
 
 由于垃圾回收的存在，我们可以发现，频繁地修改一个文件是不利于 SSD 寿命和性能表现的。
 
-![](/images/ssd-writing-data.jpg)
+![](https://ik.imagekit.io/elsetech/blog/images/ssd-writing-data.jpg)
 
 ### 逻辑地址转换
 
@@ -72,7 +72,7 @@ SSD 有四种层次的并行处理方式：
 - Chip-level parallelism
 - Plane-level parallelism
 
-![](/images/ssd-package.jpg)
+![](https://ik.imagekit.io/elsetech/blog/images/ssd-package.jpg)
 
 SSD 内部将不同芯片中的多个 Block 组成一个 Clustered Block。单次数据写入可以通过 Clustered Block 并行写入到不同 Block 中。由此可以发现，即便是单线程的写入，在 SSD 层也能实现并发的写，当然前提是写入的数据大于整个 Clustered Block 的大小。另外，对于这类大数据的写入，单线程性能甚至优于多线程，多线程写入会有更大的延迟。
 
@@ -89,7 +89,7 @@ SSD 内部将不同芯片中的多个 Block 组成一个 Clustered Block。单�
 
 通常来说，即便是对于 SSD，随机读写也会比顺序读写要慢很多，最恶劣情况下甚至相差10倍。
 
-![](/images/lies-damn-lies-and-ssd-benchmark.jpg)
+![](https://ik.imagekit.io/elsetech/blog/images/lies-damn-lies-and-ssd-benchmark.jpg)
 
 随机读的问题在于：
 

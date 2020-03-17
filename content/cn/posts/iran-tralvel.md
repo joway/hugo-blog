@@ -15,8 +15,8 @@ draft: false
 
 Iran 一词由雅利安（Aryan）演化而来，本意雅利安人的土地。雅利安人中有一支居住在伊朗高原，这支人的后裔被称作波斯人，后建立起横跨欧亚非的波斯帝国。651 年阿拉伯帝国打败波斯，伊斯兰宗教开始传入波斯。1925 年礼萨汗建立了巴列维王朝，在 1935 年将国名从波斯变成伊朗，一方面迎合当时西方社会对于雅利安人种的推崇热潮，一方面也为了表示伊朗是所有雅利安人的国家。
 
-![](../../images/iran/persepolis.jpg)
-![](../../images/iran/persepolis-door.jpg)
+![](https://ik.imagekit.io/elsetech/blog/images/iran/persepolis.jpg?tr=w-1024)
+![](https://ik.imagekit.io/elsetech/blog/images/iran/persepolis-door.jpg?tr=w-1024)
 
 > Persepolis
 
@@ -30,7 +30,7 @@ Iran 一词由雅利安（Aryan）演化而来，本意雅利安人的土地。�
 
 在伊朗的飞机上，能感受到国际制裁的切身影响。我乘坐的航班是从上海直飞德黑兰的马汉航空，飞机是一架17年机龄的空客A340。根据国际制裁决议，伊朗无法直接进口新型飞机，只能从欧洲一些航空公司手里购买二手、多手甚至是退役的飞机。更为糟糕的是，伊朗没法得到原厂制造商的技术支持，甚至连飞机更换的零件都需要依靠黑市走私，导致其空难事故远超其他正常国家。
 
-![](../../images/iran/airplane.jpg)
+![](https://ik.imagekit.io/elsetech/blog/images/iran/airplane.jpg?tr=w-1024)
 
 > 马汉航空伤痕累累的二手飞机
 
@@ -44,7 +44,7 @@ Iran 一词由雅利安（Aryan）演化而来，本意雅利安人的土地。�
 
 伊朗和中国一样，对互联网进行非常严格的管制，但中国政府实行的是黑名单制，只有被审查机构注意到的网站才会被禁止访问，而伊朗政府在这方面显然遥遥领先于中国，直接一刀切实行白名单制度 —— 只有被政府允许的网站才能被访问。所以甚至连微信在伊朗都是无法正常使用的。11月的时候伊朗出现了大规模的游行抗议，政府甚至能够下决心直接切断互联网长达163个小时。
 
-![](../../images/iran/iran-network.png)
+![](https://ik.imagekit.io/elsetech/blog/images/iran/iran-network.png)
 
 > NetBlocks 对于伊朗互联网封锁的检测
 
@@ -56,7 +56,7 @@ Instagram 现在是伊朗的国民级应用，相当于中国的朋友圈，旅�
 
 [Snapp](https://snapp.ir/about) 是一款由一群毕业于德黑兰各个大学的年轻人开发的类 Uber 打车软件，我在伊朗的大城市都深度依赖它往返各处。和滴滴在中国一样，这家公司帮助了一大批人解决了就业问题和副业问题。我在最后一天清晨打车遇到一位司机，他本来的工作是 Simulation Engineer，但是由于有了小孩，不得不在早上上班前兼职 Snapp 赚点外快。这家公司 16 年的时候获得了 2000 万欧元的A轮融资，之后又收购了一家预订酒店的公司，现在上面甚至还能预订食物和机票，从伊朗 Uber 进化成了伊朗 Grab。前段时间由于川普又签署了新的制裁令，导致 Github 在没有通知的情况下，直接封禁了一位伊朗开发者的帐号，从而在 Github 上发起了联名抗议运动，当时还去签名支持了一下。在使用 Snapp 的时候经常想起这件事，如果 2019 年的互联网还存在英雄主义，这群在 Snapp 的年轻人做的事情就是英雄主义。
 
-![](../../images/iran/snapp.jpg)
+![](https://ik.imagekit.io/elsetech/blog/images/iran/snapp.jpg?tr=w-1024)
 
 虽然零零碎碎有一些本土产品，但与外面的世界相比，伊朗的互联网依旧算是一片荒漠，但同时也是一片未来的绿洲。如果有一天伊朗能够重新和世界接轨，以其远高于周边国家的人均教育水平和长期受压抑的创造欲，一定能够涌现出一批疯狂的年轻人，给伊斯兰世界的互联网带去一点非西方的色彩。
 
@@ -64,8 +64,8 @@ Instagram 现在是伊朗的国民级应用，相当于中国的朋友圈，旅�
 
 之前在西班牙旅行的时候，在摩尔人区发现经常会偶遇大大小小的非常美的花园，当时还觉得是摩尔人自己的文化。这次在伊朗见到了一个个令我叹为观止的花园，经过查阅才知道在伊斯兰文化里，花园也是「天园」，是为了模仿天堂的样子。
 
-![](../../images/iran/hafez.jpg)
-![](../../images/iran/garden.jpg)
+![](https://ik.imagekit.io/elsetech/blog/images/iran/hafez.jpg?tr=w-1024)
+![](https://ik.imagekit.io/elsetech/blog/images/iran/garden.jpg?tr=w-1024)
 
 虽然来源于宗教，但这些花园内完全没有丝毫宗教的影子，甚至可能算是伊朗境内极少数完全没有宗教色彩的地方。或许是因为，宗教只是帮助人们接近上帝，而在上帝居住的地方，只应该存在上帝自己的造物。
 
@@ -75,30 +75,30 @@ Instagram 现在是伊朗的国民级应用，相当于中国的朋友圈，旅�
 
 在设拉子的时候误打误撞居然进了理论上非穆斯林不能进入的光明王之墓的清真寺，当时并不知道这个清真寺这么有来头，一进去就被里面的氛围所震撼了。巨大的广场里，每个人都在彼此欢笑地聊天，热闹地像个集市，人们分享的是彼此的精神。在之后的旅途中，我一次次在清真寺看到类似的场面，有在里面乘凉的，有在里面看书的，甚至还有在里面带孩子的。这是我第一次切身理解到宗教对于人的作用机理，以及为什么现代科学如此发达，人们还是依旧需要宗教。
 
-![](../../images/iran/mosque-people.jpg)
+![](https://ik.imagekit.io/elsetech/blog/images/iran/mosque-people.jpg?tr=w-1024)
 
 除了清真寺里的广场，寺的主体也是一场视觉盛宴。
 
 多年前在罗马的万神殿仰望穹顶的时候第一次感受到或许上帝真的存在，而在伊斯法罕的清真寺里也出现了类似的体验。这些人类创造的宏伟建筑里的美已经不属于人类自己，这里的美原本就存在于自然界，但是人类学会了他们。
 
-![](../../images/iran/mosque-top.jpg)
-![](../../images/iran/mosque.jpg)
-![](../../images/iran/old-mosque.jpg)
+![](https://ik.imagekit.io/elsetech/blog/images/iran/mosque-top.jpg?tr=w-1024)
+![](https://ik.imagekit.io/elsetech/blog/images/iran/mosque.jpg?tr=w-1024)
+![](https://ik.imagekit.io/elsetech/blog/images/iran/old-mosque.jpg?tr=w-1024)
 
 ## 伊朗高原
 
 在伊朗从南向北，一路的地貌近乎一致，都是大片大片的荒漠，宏伟的天空，加上突然出现的山头。长期生活在这种景色之下，难怪伊朗人都心胸豁达。
 
-![](../../images/iran/road.jpg)
+![](https://ik.imagekit.io/elsetech/blog/images/iran/road.jpg?tr=w-1024)
 
 ## 涅瓦兰宫
 
 涅瓦兰宫是巴列维最后10年居住的地方。这是我拜访过的最不像皇宫的「皇宫」，更加是一个「有钱」的知识分子豪宅。在里面几乎看不到任何权力的象征，而这是其他国家皇宫的标配。有的只是飞机模型，电子器材，家庭照片，儿童玩具。虽然通过一个人的家庭布置去判断一个人有点愚昧，但如果允许的话，我依旧愿意相信他是一位真心想为伊朗做实事的国王。
 
-![](../../images/iran/niavaran4.jpg)
-![](../../images/iran/niavaran2.jpg)
-![](../../images/iran/niavaran1.jpg)
-![](../../images/iran/niavaran3.jpg)
+![](https://ik.imagekit.io/elsetech/blog/images/iran/niavaran4.jpg?tr=w-1024)
+![](https://ik.imagekit.io/elsetech/blog/images/iran/niavaran2.jpg?tr=w-1024)
+![](https://ik.imagekit.io/elsetech/blog/images/iran/niavaran1.jpg?tr=w-1024)
+![](https://ik.imagekit.io/elsetech/blog/images/iran/niavaran3.jpg?tr=w-1024)
 
 ## 德黑兰
 
@@ -112,7 +112,7 @@ Instagram 现在是伊朗的国民级应用，相当于中国的朋友圈，旅�
 
 在设拉子去了一户游牧民族家里吃晚餐，帐篷里进了一只飞蝶，本以为会被拍死，却看到强壮的男主人极其温柔地用手引着它飞出帐篷，才猛然意识到这是穆斯林的生命观。
 
-![](../../images/iran/nomadism.jpg)
+![](https://ik.imagekit.io/elsetech/blog/images/iran/nomadism.jpg?tr=w-1024)
 
 在前往伊斯法罕的大巴上遇到后排一位英语非常流利的女士，帮助我找到位置，并且分享午餐给我。身边坐着的小哥虽然不会英语，但是主动用翻译软件找我聊天。他在军队里做机械工程师，刚刚结束休假要返回军营，还来询问他来中国能不能找到工作。
 
@@ -120,26 +120,8 @@ Instagram 现在是伊朗的国民级应用，相当于中国的朋友圈，旅�
 
 在德黑兰的一个公园里遇到可能有超过100个女学生，被他们集体 say hi 所震撼。
 
-![](../../images/iran/girl-hi.jpg)
+![](https://ik.imagekit.io/elsetech/blog/images/iran/girl-hi.jpg?tr=w-1024)
 
 在古列斯坦皇宫附近散步，走到一个岔口因为想查阅微信就拿出手机看了下，这时旁边一个伊朗女生以为我是不认识路了，来询问我要去哪里。聊上以后和她一起边散步，谈论了伊朗的政治，电影，还载我兜了一圈德黑兰。她家在德黑兰西北部，算是德黑兰版浦东新区，政府修建了一个巨大的人工湖，于是约了第二天去那里看日出。之后一起去了一个更西边的万国花园，比较尴尬的是最后返程时，她的中国国产车电池坏了，不得不一起窘迫地等待保险公司。
 
-![](../../images/iran/somi.jpg)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+![](https://ik.imagekit.io/elsetech/blog/images/iran/somi.jpg?tr=w-1024)

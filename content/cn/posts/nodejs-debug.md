@@ -23,7 +23,7 @@ draft: false
 
 通过下载两份间隔一段时间(几分钟)的 heapdump 文件，打开 Chrome DevTools，进入 Memory Tab，选择 Load。选中其中时间更近的 heapdump ，并选择 Comparison，比较对象是老的那份 heapdump：
 
-![](/images/nodejs-debug/01.png)
+![](https://ik.imagekit.io/elsetech/blog/images/nodejs-debug/01.png)
 
 此时可以选择按 Delta 排序，可以看到两个时间点增加了哪些新的对象。
 
@@ -33,7 +33,7 @@ draft: false
 
 首先依旧是拿到 heapdump 文件，并在 Chrome 中打开。
 
-![](/images/nodejs-debug/02.png)
+![](https://ik.imagekit.io/elsetech/blog/images/nodejs-debug/02.png)
 
 这里有一些名词需要解释含义：
 
@@ -44,7 +44,7 @@ draft: false
 
 我们可以先不管别的值，只看 `Retained Size` 。从上图我们可以看到，Object 的 `Retained Size` 是最大的，所以可以点开浏览它里面的元素。
 
-![](/images/nodejs-debug/03.png)
+![](https://ik.imagekit.io/elsetech/blog/images/nodejs-debug/03.png)
 
 如图标红的是该元素的引用关系，即在代码 `[engine.io/lib/server.js](http://engine.io/lib/server.js)` 中 `nsps(Server)` 对象的 `/notification` 属性下的 `adapter(Namespace)` 属性里的 `sids` 属性中引用了我们选中的对象 72257。sids 的值就是选中的对象。
 
