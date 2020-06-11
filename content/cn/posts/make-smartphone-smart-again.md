@@ -2,7 +2,7 @@
 title: Make Smartphone Smart Again
 date: 2019-01-08
 categories: ['技术']
-draft: false
+draft: true
 ---
 
 使用 Pixel 3 近一个月了，期间也带着它在外面玩了一周多时间，在国内外都积累了一些作为主力机的使用体验。
