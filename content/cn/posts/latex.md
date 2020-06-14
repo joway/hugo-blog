@@ -1,7 +1,7 @@
 ---
 title: 一份其实好吃的 LaTeX 入门餐
 date: 2018-05-13
-categories: ['技术']
+categories: ['Tech']
 draft: false
 aliases: [
     "/编程/latex/",

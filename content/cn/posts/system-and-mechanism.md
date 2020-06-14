@@ -1,7 +1,7 @@
 ---
 title: 制度与机制
 date: 2019-12-25
-categories: ['随笔']
+categories: ['Thought']
 draft: true
 ---
 

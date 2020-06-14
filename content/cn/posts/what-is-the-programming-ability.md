@@ -1,7 +1,7 @@
 ---
 title: 什么是真正的编程能力
 date: 2019-06-11
-categories: ['技术']
+categories: ['Tech']
 draft: false
 ---
 

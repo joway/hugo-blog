@@ -1,7 +1,7 @@
 ---
 title: 关于自由的偏见
 date: 2018-04-05
-categories: ['随笔']
+categories: ['Thought']
 draft: false
 aliases: [
     "/随想/liberal-think-chip/",

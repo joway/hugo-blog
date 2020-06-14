@@ -1,7 +1,7 @@
 ---
 title: 自由意志下的选择
 date: 2019-01-02
-categories: ['随笔']
+categories: ['Thought']
 draft: false
 tags:
 - 黑镜

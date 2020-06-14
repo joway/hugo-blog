@@ -1,7 +1,7 @@
 ---
 title: 创业公司的文化
 date: 2020-03-02
-categories: ['随笔']
+categories: ['Thought']
 draft: false
 ---
 

@@ -2,7 +2,7 @@
 title: "欧游散记 —— 德国国会大厦"
 date: 2018-03-02
 draft: false
-categories: ['旅行']
+categories: ['Travel']
 aliases: [
     "/游记/deutschland-reichstag/",
 ]

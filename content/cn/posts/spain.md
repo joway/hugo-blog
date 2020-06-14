@@ -2,7 +2,7 @@
 title: 欧游散记 —— 西班牙
 date: 2018-03-03
 draft: false
-categories: ['旅行']
+categories: ['Travel']
 aliases: [
     "/游记/spain/",
 ]

@@ -1,7 +1,7 @@
 ---
 title: "信息"
 date: 2020-03-18
-categories: ['技术']
+categories: ['Tech']
 draft: true
 ---
 

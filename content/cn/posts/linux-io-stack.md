@@ -1,7 +1,7 @@
 ---
 title: Linux I/O 栈浅析
 date: 2019-08-11
-categories: ['技术']
+categories: ['Tech']
 draft: false
 ---
 

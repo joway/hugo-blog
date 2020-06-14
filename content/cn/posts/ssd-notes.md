@@ -1,7 +1,7 @@
 ---
 title: SSD 背后的奥秘
 date: 2019-07-09
-categories: ['技术']
+categories: ['Tech']
 draft: false
 ---
 

@@ -2,7 +2,7 @@
 title: 欧游散记 —— 伪君子布拉格
 date: 2018-02-11
 draft: false
-categories: ['旅行']
+categories: ['Travel']
 aliases: [
     "/游记/euro-prague/",
 ]

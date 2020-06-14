@@ -1,7 +1,7 @@
 ---
 title: Make Smartphone Smart Again
 date: 2019-01-08
-categories: ['技术']
+categories: ['Tech']
 draft: true
 ---
 

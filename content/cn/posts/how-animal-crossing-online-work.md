@@ -1,7 +1,7 @@
 ---
 title: "从动物森友会聊主机游戏联机机制"
 date: 2020-05-13
-categories: ['技术']
+categories: ['Tech']
 draft: false
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: Kafka 的设计与实践思考
 date: 2018-04-16
-categories: ['技术']
+categories: ['Tech']
 draft: false
 aliases: [
     "/最佳实践/kafka-design-practice/",
