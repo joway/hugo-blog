@@ -7,9 +7,7 @@ draft: false
 
 文件系统是操作系统 IO 栈里非常重要的一个中间层，其存在的意义是为了让上层应用程序有一层更加符合人类直觉的抽象来进行文档的读写，而无需考虑底层存储上的细节。
 
-
-
-![](../../images/distributed-filesystem/io-layers.png)
+![](https://ik.imagekit.io/elsetech/blog/images/distributed-filesystem/io-layers.png)
 
 # 本地文件系统
 
@@ -19,7 +17,7 @@ draft: false
 
 在前面一张图里，我们能够看到文件系统直接和通用块层进行交互，无论底层存储介质是磁盘还是 SSD，都被该层抽象为 **Block** 的概念。文件系统在初始化时，会先在挂载的块存储上的第一个位置创建一个 **Super Block**：
 
-![](../../images/distributed-filesystem/filesystem-block.png)
+![](https://ik.imagekit.io/elsetech/blog/images/distributed-filesystem/filesystem-block.png)
 
 上图右边部分就是一块完整的存储，可以将其想象成一个数组。
 
@@ -34,9 +32,7 @@ Super Block 中存储了该文件系统的信息，其组成部分如下：
 
 Linux 中每个文件都拥有一个唯一的 Inode，其结构如下：
 
-![](../../images/distributed-filesystem/inode.png)
-
-
+![](https://ik.imagekit.io/elsetech/blog/images/distributed-filesystem/inode.png)
 
 inode 上半部分的 meta data 很容易理解，下半部分的 block 指针的含义分别为：
 
@@ -55,8 +51,6 @@ inode 上半部分的 meta data 很容易理解，下半部分的 block 指针�
 
 当 block_size_bytes == 1024 时，最大文件大小为 16 GiB。但当 block_size_bytes == 4096 时，虽然上述公式值为 4 TiB，但由于 ext3 文件系统对单个 inode 上的 blocks 数量`i_blocks` 的类型为 [__le32](https://github.com/spotify/linux/blob/6eb782fc88d11b9f40f3d1d714531f22c57b39f9/include/linux/ext3_fs.h#L298) 即 [__u32](https://github.com/torvalds/linux/blob/master/tools/include/linux/types.h#L56) ，所以单个文件的 blocks 数不能 > `2^32-1` 个，且这里 i_blocks 表示的 block 指的是扇区而非前面说得逻辑块，其大小被固定为 [512 bytes](https://github.com/torvalds/linux/blob/fe7fdc37b5/fs/ext3/super.c#L1436)，所以文件大小不能 > `512 * (2^32 - 1)` ，即约等于2 TiB。扇区是过去磁盘时代的概念，在 SSD 中虽然不存在扇区的概念，但为了兼容旧软件生态，它会提供一个假的扇区值，一般为 4KB。但由于 ext3 该值是写死在[代码](https://github.com/torvalds/linux/blob/fe7fdc37b5/fs/ext3/super.c#L1452)中的，所以即便是 SSD 也存在该限制。
 
-
-
 # 分布式文件系统的演化
 
 如果我们希望用户对文件的读写操作都通过网络进行而不是本地，以实现多台机器间共享文件状态，通过图1的 IO 流程不难发现，我们只要在文件系统层将其 IO 操作转发给网络上的存储节点而不是本地通用块层，我们就能在应用程序无感知的情况下实现一个分布式文件系统。
@@ -65,8 +59,6 @@ inode 上半部分的 meta data 很容易理解，下半部分的 block 指针�
 
 1. 检索文件 Metadata (在本地文件系统中即 inode )，找出文件内容存放地址 (小文件)
 2. 根据地址读取文件内容 (小文件/大文件)
-
-
 
 下文介绍的所有分布式文件系统也都是在这两步上做主要取舍和优化，以适应不同应用场景。
 
@@ -89,7 +81,7 @@ GFS 的设计目标是：
 
 ##### 架构
 
-![](../../images/distributed-filesystem/gfs.png)
+![](https://ik.imagekit.io/elsetech/blog/images/distributed-filesystem/gfs.png)
 
 从上图我们可以看出 GFS 的设计思路：
 
@@ -101,11 +93,9 @@ GFS 的设计目标是：
 
 由于设计目标是大文件场景，所以 client 端不会缓存 chunk data，但是会缓存 metadata。而对于 chuckserver 而言，其文件缓存利用了 Linux 自带的 buffer cache。
 
-
-
 **对于写请求**：
 
-![](../../images/distributed-filesystem/gfs-write.png)
+![](https://ik.imagekit.io/elsetech/blog/images/distributed-filesystem/gfs-write.png)
 
 1. client 向 Master 请求持有 lease 的 chunk（primary replica）位置和其他 replicas 的位置
 2. Master 返回位置信息，client 将这些信息缓存起来
@@ -115,13 +105,11 @@ GFS 的设计目标是：
 6. secondaries 告知 primary 操作执行完毕
 7. primary 向 client 应答，期间的错误也会发送给 client
 
-
-
 ### 一致性保证
 
 对于 metadata 的信息修改一定是一致的，因为 master 是一个单一主节点架构。但对于chuckserver上的写操作在不同情况下有不同的表现：
 
-![](../../images/distributed-filesystem/gfs-consistency.png)
+![](https://ik.imagekit.io/elsetech/blog/images/distributed-filesystem/gfs-consistency.png)
 
 上图名词的解释：
 
@@ -179,7 +167,7 @@ Colossus 的设计思路是：
 
 从本地文件系统中的 inode 设计我们可以看到，对于 Metadata 我们是以一颗树的方式在进行存储的，而树这种数据结构是不太容易进行拆分以实现分布式的。所以第一步是将树的结构变成一个 key-value 的结构：
 
-![](../../images/distributed-filesystem/tablefs-kv.png)
+![](https://ik.imagekit.io/elsetech/blog/images/distributed-filesystem/tablefs-kv.png)
 
 对于 key-value 结构，有非常多的数据结构可以选择，例如 LSM Tree，而且这些结构都可以非常易于进行分布式管理。而对于 Google 来说，现成的 Key-Value 存储就是 BigTable。但问题是 BigTable 的实现其实是基于分布式文件系统也就是之前的 GFS 的。这就导致了一个循环依赖问题。
 
@@ -203,7 +191,7 @@ Metadata(10 TiB) ==> FileSystem(10 Tib) = Metadata(0.1 Tib) + Chunk(9.9 Tib)
 
 由此我们发现一个大的文件系统一定能够由一个更小的文件系统加上 ChunkServer 集群搭建起来，这也是 Colossus 设计的核心思想。而规模被层层缩小到最后时，我们就可以将其用一个最简单的强一致的分布式存储系统来作为最后的 BigTable 的存储系统，例如 **Chubby**。
 
-![](../../images/distributed-filesystem/colossus.png)
+![](https://ik.imagekit.io/elsetech/blog/images/distributed-filesystem/colossus.png)
 
 前面我们已经将 Metadata 数据变成了 Key-Value 结构，并且这里的 BIgTable 底层数据结构为 LSM Tree。而 LSM Tree 的特点就是将数据的写操作都转换为了顺序写入，从而大大提升了写的性能。而我们 GFS 那边又讲了，对于一个大文件的顺序写入，只有在跨越(创建)了新的chunk时，我们才需要和 Master 节点进行通信，所以这里落在 BigTable 上的读写请求其实是非常少的，从而也进一步降低了对最底层 Chubby 的压力。我们这里用一个推导过程来解释这个架构的强大之处：
 
@@ -240,7 +228,7 @@ M(N*S/B,m)=W(N*S/B,m)=> M(N*S/B*m/B) + C(N*S/B)
 
 ### 架构
 
-![](../../images/distributed-filesystem/haystack.png)
+![](https://ik.imagekit.io/elsetech/blog/images/distributed-filesystem/haystack.png)
 
 #### Haystack Directory
 
@@ -258,13 +246,13 @@ Store 中存在两种大文件：
 
 ##### Store File
 
-![](../../images/distributed-filesystem/haystack-store-file.png)
+![](https://ik.imagekit.io/elsetech/blog/images/distributed-filesystem/haystack-store-file.png)
 
 每个文件对象为一个 Needle 。
 
 ##### Index File
 
-![](../../images/distributed-filesystem/haystack-index-file.png)
+![](https://ik.imagekit.io/elsetech/blog/images/distributed-filesystem/haystack-index-file.png)
 
 每个文件对象会对应在 Index File 中创建一个 Needle，其中包含了该文件在 Store File 中的 Offset 信息。更新操作只需要更新 Index File 并在 Store File 中 Append 新的一个 Needle 就行。删除操作也仅仅只需要将索引的 Flag 标记为删除。这些操作产生的脏数据都可以后续异步回收程序进行重整处理。
 
@@ -283,9 +271,9 @@ JuiceFS 就是专门为此而设计的。
 
 ### 架构
 
-![](../../images/distributed-filesystem/juicefs.png)
+![](https://ik.imagekit.io/elsetech/blog/images/distributed-filesystem/juicefs.png)
 
-![](../../images/distributed-filesystem/juicefs-fuse.png)
+![](https://ik.imagekit.io/elsetech/blog/images/distributed-filesystem/juicefs-fuse.png)
 
 #### Metadata Service
 
@@ -304,7 +292,3 @@ JuiceFS 的 Metadata Service 是一组基于 Raft 协议实现的高可用集群
 ### 其他方案：Shared Block Storage
 
 上面说的是用 Object Storage 来实现 chunkserver，还有一种更加另类的实现是，直接在块存储层实现共享，使得上层文件系统直接变成一个分布式的文件系统。目前国内能够看到的也只有[阿里云](https://promotion.aliyun.com/ntms/act/vsan.html?spm=5176.54360.203004.5.GiftLC)开始了内测。
-
-
-
-
