@@ -1,13 +1,9 @@
 ---
 title: 分布式文件系统的演化
-date: 2020-06-04
+date: 2020-06-14
 categories: ['技术']
-draft: true
+draft: false
 ---
-
-# 分布式文件系统演化
-
-
 
 文件系统是操作系统 IO 栈里非常重要的一个中间层，其存在的意义是为了让上层应用程序有一层更加符合人类直觉的抽象来进行文档的读写，而无需考虑底层存储上的细节。
 
@@ -21,7 +17,7 @@ draft: true
 
 ## 存储结构
 
-在前面一张图里，我们能够看到文件系统直接和通用块层进行交互，无论底层存储介质是磁盘还是SSD，都被该层抽象为 **Block** 的概念。文件系统在初始化时，会先在挂载的块存储上的第一个位置创建一个 **Super Block**：
+在前面一张图里，我们能够看到文件系统直接和通用块层进行交互，无论底层存储介质是磁盘还是 SSD，都被该层抽象为 **Block** 的概念。文件系统在初始化时，会先在挂载的块存储上的第一个位置创建一个 **Super Block**：
 
 ![](../../images/distributed-filesystem/filesystem-block.png)
 
@@ -64,8 +60,6 @@ inode 上半部分的 meta data 很容易理解，下半部分的 block 指针�
 # 分布式文件系统的演化
 
 如果我们希望用户对文件的读写操作都通过网络进行而不是本地，以实现多台机器间共享文件状态，通过图1的 IO 流程不难发现，我们只要在文件系统层将其 IO 操作转发给网络上的存储节点而不是本地通用块层，我们就能在应用程序无感知的情况下实现一个分布式文件系统。
-
-
 
 结合之前的本地文件系统流程，我们可以把分布式文件系统中的数据访问模式分为两步：
 
@@ -152,7 +146,7 @@ GFS 的设计目标是：
    1. append 1
    2. append 2(failed in chunkserver2)
    3. append 2(retry)
-   ---
+   ==>
    chuckserver1 (primary)
    1,2,2
    
@@ -162,11 +156,7 @@ GFS 的设计目标是：
 
    对于上述情况，chuckserver1 和 chuckserver2 虽然在中间位置的数据不一致，但重试成功后，数据依然都写入了（at least once），所以依旧是定义行为。而这种数据不一致的情况，需要客户端自己事先知晓，且在客户端侧进行数据重复的处理（在 SDK 层做统一过滤）。
 
-
-
 从上述描述中我们不难发现，GFS 的实现奉行「重客户端轻服务端」思想，把许多原先需要服务端做的校验和保证都交由客户端实现，服务端只做最基本的工作，这种设计思想可以让服务端的实现更加简洁和稳定。
-
-
 
 ### 缺陷
 
@@ -248,8 +238,6 @@ M(N*S/B,m)=W(N*S/B,m)=> M(N*S/B*m/B) + C(N*S/B)
 
 由此我们就能够大致理解 Haystack 的设计方向了。
 
-
-
 ### 架构
 
 ![](../../images/distributed-filesystem/haystack.png)
@@ -280,11 +268,7 @@ Store 中存在两种大文件：
 
 每个文件对象会对应在 Index File 中创建一个 Needle，其中包含了该文件在 Store File 中的 Offset 信息。更新操作只需要更新 Index File 并在 Store File 中 Append 新的一个 Needle 就行。删除操作也仅仅只需要将索引的 Flag 标记为删除。这些操作产生的脏数据都可以后续异步回收程序进行重整处理。
 
-
-
 Index File 可以被完全加载到内存，故而能够大大加快检索效率。一次文件的读取最多也只会在 Store File 侧产生一次 IO 操作。为了实现这点，Haystack 也做了非常多的索引压缩以降低内存占用。
-
-
 
 ## JuiceFS: Cloud Native Solution
 
@@ -295,11 +279,7 @@ Index File 可以被完全加载到内存，故而能够大大加快检索效率
 
 而在面向传统私有机房的架构设计中，上述两点是完全不能保障的，以至于有一句很著名的话叫做，硬盘不是已经坏了，就是在坏的路上。但在 Cloud Navite 下，如果我们还是使用传统的架构，就会产生很多重复浪费。
 
-
-
 JuiceFS 就是专门为此而设计的。
-
-
 
 ### 架构
 
@@ -319,46 +299,11 @@ JuiceFS 的 Metadata Service 是一组基于 Raft 协议实现的高可用集群
 
 由于 S3 本身并不是给文件系统设计的，它的 first-byte-out-latency 非常高，一般有 [100–200 ms](https://docs.aws.amazon.com/AmazonS3/latest/dev/optimizing-performance.html) ，所以这种做法对于小文件肯定是完全不适合的。但如果是针对大文件的场景，这个 100 ms的延迟其实影响并不大，由于 S3 本身就是一个分布式的存储，在本地机器带宽足够的情况下，其吞吐量甚至能够达到 100 Gb/s。
 
-
-
 对于顺序读与顺序写请求来说，只要本地能够不停地从 metadata service 上预读到后续的 chunk 位置信息，那么其相较于本地文件系统的差异就可以进一步缩小。
 
 ### 其他方案：Shared Block Storage
 
 上面说的是用 Object Storage 来实现 chunkserver，还有一种更加另类的实现是，直接在块存储层实现共享，使得上层文件系统直接变成一个分布式的文件系统。目前国内能够看到的也只有[阿里云](https://promotion.aliyun.com/ntms/act/vsan.html?spm=5176.54360.203004.5.GiftLC)开始了内测。
-
-
-
-# 分布式文件系统的应用
-
-## Database on DFS
-
-```sql
-SELECT id,name,age FROM table_name WHERE age<10 LIMIT 10
-```
-
-SQL 解析并执行成查询计划：
-
-1. 检查 age 索引 `index_age`
-2. 打开 `index_age` 文件，加载到内存中并转换成 `B+ Tree`/... 数据结构
-3. 从索引中得到原始数据地址列表 [addr0,...,addr9]，根据地址访问文件系统，获取数据。
-
-上述 SQL 的执行中，我们可以发现其中涉及到以下几个 IO：
-
-- **Open** and **Read** index_age
-- **Open** and **Read** [addr0,...,addr9]，(实际映射的文件数量可能 < 10 个)
-
-一般情况下，索引文件都会是大文件，且顺序读写。而数据文件的读写取决于数据库底层数据结构的设计，一般而言，关系型数据库(以B+Tree为代表)以随机读写为主，而分析型数据库(以LSM Tree为代表)以顺序读写为主。
-
-对于顺序读写
-
-
-
-## DFS on Database
-
-
-
-
 
 
 
