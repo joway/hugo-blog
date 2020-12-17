@@ -49,7 +49,7 @@ BenchmarkCustomRand-8 423686118 2.38 ns/op
 
 基于这个思路，实现了一个 [fastrand](https://github.com/joway/fastrand) 库放到了 github。
 
-从 benchmark 中可以看到性能提升显著，在并发条件下，比原生全局 rand 快 8 倍，即便是在非并发时候，由于去掉了锁的获取过程，也快了近 2 倍。
+从 benchmark 中可以看到性能提升显著，在并发条件下，比原生全局 rand 快了大约 8 倍.
 
 ```
 BenchmarkStandardRand
