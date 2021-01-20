@@ -1,9 +1,11 @@
 ---
 title: Golang Interface 内部实现
 date: 2021-01-20
-categories: ['Golang']
+categories: ['Tech']
 draft: false
 ---
+
+最近遇到一个由于 Golang Interface 底层实现，引发的线上 panic 问题，虽然根源在于赋值操作没有保护起来，却意外地发现了关于 interface 的一些有意思的底层细节。
 
 假设我们现在有以下定义：
 
