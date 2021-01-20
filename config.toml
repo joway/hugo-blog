@@ -21,6 +21,11 @@ canonifyURLs = false
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
+  [markup.highlight]
+    guessSyntax = true
+    noClasses = true
+    style = "bw"
+    tabWidth = 2
 
 [author]
   name = "Joway"
@@ -49,7 +54,7 @@ headTitle = "Joway Wang"
 description = "一个试图有建设性的人。"
 favicon = "/logo.png"
 mainSections = ["posts"]
-staticPrefix = "https://cdn.jsdelivr.net/gh/joway/blog"
+# staticPrefix = "https://cdn.jsdelivr.net/gh/joway/blog"
 postHeaderContent = ""
 postFooterContent = '<br/><br/><p>Subscribe：<a target="_blank" href="https://mailchi.mp/a1a0d59e7a19/joway"><b>Mailchimp</b></a></p><br/><a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://blog.joway.io/images/cc.png" /></a>'
 
