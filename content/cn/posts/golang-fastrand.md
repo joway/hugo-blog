@@ -45,7 +45,7 @@ BenchmarkCustomRand-8 423686118 2.38 ns/op
 
 但在很多其他场景下，我们并不能直接控制调用我们的 goroutine，又或者 goroutine 数量过多以至于无法承受这部分内存成本。
 
-此时的一个思路是使用 `sync.Pool` 来为 rand.Source 创建一个池，当多线程并发读写时，优先从自己当前 P 中的 poolLocal 中获取，从而减少锁的竞争。同时由于只是用 pool 扩展了原生的 rngSource 对象，所以可以兼容其 rand.Rand 下的所有接口调用。
+此时的一个思路是使用 `sync.Pool` 来为 `rand.Source` 创建一个池，当多线程并发读写时，优先从自己当前 P 中的 poolLocal 中获取，从而减少锁的竞争。同时由于只是用 pool 扩展了原生的 rngSource 对象，所以可以兼容其 rand.Rand 下的所有接口调用。
 
 基于这个思路，实现了一个 [fastrand](https://github.com/joway/fastrand) 库放到了 github。
 
