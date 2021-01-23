@@ -24,7 +24,7 @@ canonifyURLs = false
   [markup.highlight]
     guessSyntax = true
     noClasses = true
-    style = "bw"
+    style = "tango"
     tabWidth = 2
 
 [author]
