@@ -39,8 +39,12 @@
   <meta property="og:image" content="{{ .Params.album }}" />
   {{ end }}
 
-  <link rel="stylesheet" href="{{ .Site.Params.staticPrefix }}{{ "css/flexboxgrid-6.3.1.min.css" | relURL }}" />
-  <link rel="stylesheet" href="{{ "css/index.css" | relURL }}">
+  {{ with resources.Get "css/index.css" | minify }}
+    <style>{{ .Content | safeCSS }}</style>
+  {{ end }}
+  {{ with resources.Get "css/flexboxgrid-6.3.1.min.css" | minify }}
+    <style>{{ .Content | safeCSS }}</style>
+  {{ end }}
 
   {{ range .Site.Params.extraCSSFiles -}}
   <link rel="stylesheet" href="{{ $.Site.Params.staticPrefix }}{{ . | relURL }}">
