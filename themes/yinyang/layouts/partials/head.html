@@ -31,8 +31,8 @@
   <title>{{ .Title }}</title>
   <meta property="og:title" content="{{ .Title }}" />
   <meta property="og:type" content="article" />
-  <meta property="og:description" content="{{ default .Summary .Description }}" />
-  <meta name="description" content="{{ default .Summary .Description }}" />
+  <meta property="og:description" content="{{ default .Summary .Description | plainify }}" />
+  <meta name="description" content="{{ default .Summary .Description | plainify }}" />
   {{- end }}
   <meta property="og:locale" content="{{ .Site.LanguageCode }}" />
   {{- if .Params.album -}}
