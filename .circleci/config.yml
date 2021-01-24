@@ -8,14 +8,13 @@ workflows:
 jobs:
   build:
     docker:
-      - image: circleci/golang:1.15
+      - image: buildpack-deps:trusty
     steps:
       - checkout
       - run:
           name: install
           command: |
-            sudo apt install -y git minify
-            go get github.com/gohugoio/hugo
+            sudo apt install -y git minify hugo
       - run:
           name: sync git repo
           command: |
