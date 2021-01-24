@@ -15,7 +15,7 @@ jobs:
           name: install
           command: |
             sudo apt install -y git minify
-            go get github.com/gohugoio/hugo@v0.79.1
+            go get github.com/gohugoio/hugo@v0.75.1
       - run:
           name: sync git repo
           command: |
