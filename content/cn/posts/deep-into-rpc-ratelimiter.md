@@ -165,4 +165,4 @@ draft: false
 
 但是不是意味着我们就可以直接用 AvgRT 呢？其实也不是，限流很难做到刚好卡在一个精确的点上，就算真的卡精确了，也会导致容错性不高。所以限流会倾向于略微低估系统的负载能力。Bilibili 在他们公开的微服务框架 [Kratos](https://github.com/go-kratos/kratos/blob/a52895637c6090cf74acb3ca0be16c82939549c1/pkg/ratelimit/bbr/bbr.go#L120) 中，使用的是对每一个采样窗口中的 AvgRT 中取最小的那个 AvgRT。而阿里的 Sentinel 使用的是真正意义的[最小 RT](https://github.com/alibaba/Sentinel/blob/4459ab2caf2029be2d48ed0bd8110757059a9a84/sentinel-core/src/main/java/com/alibaba/csp/sentinel/slots/statistic/metric/ArrayMetric.java#L142)。
 
-当选定了 RT 指标后，通过计算再得到 Throughput 值，就可以将其代入到前面提到的传统限流方案中去，也可以更加直接地，当 Inflight > Throughput 直接丢弃请求了。
+当根据实际业务特性选定好了 RT 指标后，再乘以前面统计到的 QPS 则可得到 Throughput 值，此时只要判断当 `Inflight > Throughput` 直接丢弃便可实现一个自适应且有科学度量标准的限流策略。
