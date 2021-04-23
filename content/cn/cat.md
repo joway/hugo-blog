@@ -1,4 +1,4 @@
----
+p---
 title: "Kui. 😾"
 date: 2019-08-30
 type: "gallery"
