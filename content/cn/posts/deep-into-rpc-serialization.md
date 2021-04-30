@@ -50,6 +50,11 @@ Stub 代码内容一般分为两块：
 下面是一段 Thrift 生成的的序列化 Stub 代码：
 
 ```go
+type User struct {
+  Name string `thrift:"name,1" db:"name" json:"name"`
+  Email string `thrift:"email,2" db:"email" json:"email"`
+}
+
 //写入 User struct
 func (p *User) Write(oprot thrift.TProtocol) error {
   if err := oprot.WriteStructBegin("User"); err != nil {

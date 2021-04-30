@@ -1,69 +1,24 @@
 ---
-title: RPC 漫谈 - 历史变迁
+title: RPC 漫谈： 服务注册与发现
 date: 2021-03-27
 categories: ["Tech"]
 draft: true
 ---
 
-## 什么是 RPC
+服务注册与发现说起来非常简单，就是一个 Key-Value 数据库，服务启动后把自己名字和 IP 地址注册上去，其他服务通过这个名字去查询到对应到 IP。但在实际工程实践中，有非常多的细节问题需要考虑。
 
-## RPC 使用
+## 何时注册
 
-为规范内部调用的规范，我们会期望在一个文件内定义我们的通信约定，例如以下 Protobuf 的定义：
+当一个服务把自己注册到注册中心时，必须先确保自己是能够提供服务的，因为一旦注册后，会立刻有流量访问过来。但是对于很多服务来说，这个保证其实有点困难，因为很多业务会存在一个需要预热的现象，例如 Java 的 ClassLoader，本地内存缓存，连接懒启动等问题。而且这些预热必须依赖真的有流量进来以后，才能开始「热」起来。但如果我们真的立刻放了大量流量进来，因为这个预热过程十分缓慢，有可能导致请求被阻塞甚至失败，从而引起服务发布时候的抖动问题。
 
-```protobuf
-service Greeter {
-  rpc SayHello (HelloRequest) returns (HelloReply) {}
-}
+所以一般我们需要在注册时，有一个 weight 字段来表示自己希望被分配到流量，但同时调低自己的权重值以期望被分配到少量的流量。
 
-message HelloRequest {
-  string name = 1;
-}
+## 何时下线
 
-message HelloReply {
-  string message = 1;
-}
-```
+一个服务的下线分为三步：
 
-根据该定义，我们虽然能够建立一个共识，但各方在实现该定义时，仍然很可能出现偏差，所以我们希望能够直接从定义文件中去自动生成一些类型以及接口：
-
-```golang
-type HelloRequest struct {
-	Name string `protobuf:"bytes,1,opt,name=name,proto3" json:"name,omitempty"`
-}
-
-type HelloReply struct {
-	Message string `protobuf:"bytes,1,opt,name=message,proto3" json:"message,omitempty"`
-}
-
-type GreeterServer interface {
-	SayHello(context.Context, *HelloRequest) (*HelloReply, error)
-}
-```
-
-利用这些已经编译好的自动生成代码，我们能够专注于业务逻辑，构建自己的服务：
-
-```golang
-// === server.go ===
-type server struct {
-	pb.UnimplementedGreeterServer
-}
-func (s *server) SayHello(ctx context.Context, in *pb.HelloRequest) (*pb.HelloReply, error) {
-	return &pb.HelloReply{Message: "Hello " + in.GetName()}, nil
-}
-
-s := grpc.NewServer()
-pb.RegisterGreeterServer(s, &server{})
-if err := s.Serve(lis); err != nil {
-	log.Fatalf("failed to serve: %v", err)
-}
-
-// === client.go ===
-c := pb.NewGreeterClient(conn)
-r, err := c.SayHello(ctx, &pb.HelloRequest{Name: name})
-if err != nil {
-	log.Fatalf("could not greet: %v", err)
-}
-```
+1. 从注册中心摘掉节点：确保不会有新的流量打向该节点
+2. 拒绝接受新的连接：但继续为正在进行中的请求提供服务
+3. 彻底关闭服务：正在进行中的请求也会被销毁
 
 
