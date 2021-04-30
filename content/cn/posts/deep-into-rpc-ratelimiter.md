@@ -1,5 +1,5 @@
 ---
-title: RPC 漫谈 - 限流问题
+title: RPC 漫谈： 限流问题
 date: 2021-04-23
 categories: ["Tech"]
 draft: false
@@ -25,7 +25,7 @@ draft: false
 
 ## 漏斗
 
-![](../../images/ratelimit/ratelimit-funnel.png)
+![](../../images/rpc-ratelimit/ratelimit-funnel.png)
 
 **优点：**
 
@@ -37,7 +37,7 @@ draft: false
 
 ## 令牌桶
 
-![](../../images/ratelimit/ratelimit-token-bucket.jpg)
+![](../../images/rpc-ratelimit/ratelimit-token-bucket.jpg)
 
 **优点：**
 
@@ -97,7 +97,7 @@ draft: false
 
 我们可以把一个微服务抽象为一个输入输出的水管，如下图所示：
 
-![](../../images/ratelimit/ratelimit-water.png)
+![](../../images/rpc-ratelimit/ratelimit-water.png)
 
 中间的这根水管的“负载能力”其实就是这个水管的体积（管径 * 管长），这是一个非常好量化的指标。
 
@@ -127,13 +127,13 @@ draft: false
 
 根据上面的这个现象，我们可以画出三个坐标图：
 
-![](../../images/ratelimit/ratelimit-rt-throught-inflight.png)
+![](../../images/rpc-ratelimit/ratelimit-rt-throught-inflight.png)
 
 前两个图反应的是 Server 的实际现象，而第三个图，是将前两个图的相同的横坐标 inflight 消掉，单独看 RT 与 Throughput 的关系。第三个图表现了我们限流工作的本质：**用 RT损失去换取吞吐量的提升**。
 
 更加符合实际情况的图是：
 
-![](../../images/ratelimit/ratelimit-rt-throught.png)
+![](../../images/rpc-ratelimit/ratelimit-rt-throught.png)
 
 这里的斜率越低，代表这部分RT损失越划算。我们的限流策略，就是去找到这个最佳限流点。
 
