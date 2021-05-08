@@ -348,3 +348,56 @@ HTTP 1.0 协议就是因为并未对每个请求标定 ID，所以在实现上�
 Thrift 协议也会在开头(8~12 bytes)标明自己的序列号 ID，所以也能很好支持多路复用。
 
 但是主流数据库协议如 Mysql 却大多都不支持连接的多路复用，这也是为什么我们经常会需要去配置数据库连接池的原因。数据库的大部分时间消耗在磁盘 IO 和 CPU 计算，使用连接池的方式可以保证有限度的并发请求量，一个接一个把活干完，如果出现繁忙状况，请求主要被阻塞在 Client 端。如果是多路复用的方式，Client 并没有办法准确估计出 Server 的负载能力，大量请求依旧会被发出去，阻塞在数据库侧，这个往往我们是不想看到的。另外，连接池的方式对于 Client 的实现来说往往也更加容易。
+
+## Server Push
+
+我们都知道连接本身是全双工的，Client 和 Server 之间想怎么发消息就怎么发，何况一个请求的返回消息本身就是一个字面意义的 Server Push。那为什么 HTTP 2.0 以及一些 RPC 协议还要去标榜自己支持 Server Push ？
+
+这个问题本身又是一个软件工程的问题。我们已经习惯了用输入输出的模式去编程，所以在协议设计的时候，很少考虑到输入没输出，输出没输入的这种情况。Server Push 就属于一种输出没输入的情况。
+
+在 HTTP 1.1 里，一个完整的消息应该如下：
+
+```
+=== Request ===
+GET /hello.txt HTTP/1.1
+User-Agent: curl/7.16.3 libcurl/7.16.3 OpenSSL/0.9.7l zlib/1.2.3
+Host: www.example.com
+Accept-Language: en, mi
+
+=== Response ===
+HTTP/1.1 200 OK
+Date: Mon, 27 Jul 2009 12:28:53 GMT
+Server: Apache
+Last-Modified: Wed, 22 Jul 2009 19:15:56 GMT
+ETag: "34aa387-d-1568eb00"
+Accept-Ranges: bytes
+Content-Length: 51
+Vary: Accept-Encoding
+Content-Type: text/plain
+
+Hello World! My payload includes a trailing CRLF.
+```
+
+每个 Response 必须对应一个 Request，从代码侧来说，就是一个函数调用。试想如果此时 Server 在连接中，莫名其妙返回了一个客户端没有请求的 Response，代码实现上能怎么做？代码根本没调用，自然也就没地方在监听等待这个 Response ，自然没地方会去处理它。
+
+后人在 HTTP 1.1 上所实现的所谓的长轮询，无非是利用长连接的特性，延迟发送了消息。与其说是什么新技术，不是说是投机取巧，但是的确在简单的场景下是一个好用的方案。要彻底解决问题必须修改协议，这也是为什么会有 WebSocket 和 HTTP 2.0 的原因。
+
+在 HTTP 2.0 中，通过标记特殊的帧 PUSH_PROMISE 来表示这个消息是没有对应 Request 的，但具体实现的时候会发现，就算 Server 能够 Push 内容给 Client，Client 也需要去解析不同消息具体含义是什么。在传统模式下，一个 Response 的含义由 Request 决定，但现在一个没有 Request 的 Response 只能通过解析其内容决定。这就导致了实现这个解析的过程其实是可以各家自己定义自己的。对于浏览器标准而言，Server Push 一般用于静态资源，所以就需要建立一套资源缓存的标准。
+
+而在 grpc 中，虽然底层用的是 HTTP 2.0 ，但并没有使用 PUSH_PROMISE 功能，就是因为对于 RPC 而言，我可以一个请求有多个返回（所谓的流模式），但是不能说没有请求直接有返回，否则用户处理侧会更加复杂且不统一了。grpc 使用流模式的示例：
+
+```go
+stream, err := streamClient.Ping(ctx)
+err = stream.Send(request)
+for {
+    response, err := stream.Recv()
+}
+```
+
+可以看出，Server Push 从来不是一项新技术，因为一直以来这功能就是 TCP 现成的。我们所缺少的，其实仅仅只是在应用层的操作规范而已。
+
+## 最后
+
+从 epoll 的诞生，到 Server Push 问题的解决，我们不难看到，所谓的新技术从更加宏观的视角来看压根就不能算是技术，仅仅只是一些对约定共识的改变而已。但就是这种共识的改变，可能会需要几十年的时间，
+
+文明建立在共识的基础上，技术也是如此。文明的进步靠去破除女子无才便是德这类旧有的共识，技术的进步也是如此。
