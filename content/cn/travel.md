@@ -1,15 +1,21 @@
 ---
-title: "On the Road"
+title: "Travel Map"
 date: 2019-08-30T20:33:03+08:00
 type: "page"
 draft: false
 ---
+
+<a id="travelbook" href="/categories/travel/">旅行记录</a>
 
 <!-- HTML -->
 <div id="travelmap"></div>
 
 <!-- Styles -->
 <style>
+#travelbook {
+  float: right;
+  font-weight: 900;
+}
 #travelmap {
   width: 100%;
   height: 500px;
