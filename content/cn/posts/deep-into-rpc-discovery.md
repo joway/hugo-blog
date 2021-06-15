@@ -2,6 +2,8 @@
 title: RPC 漫谈： 服务注册与发现
 date: 2021-03-27
 categories: ["Tech"]
+tags:
+- RPC
 draft: true
 ---
 

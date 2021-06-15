@@ -2,6 +2,8 @@
 title: RPC 漫谈：序列化问题
 date: 2021-04-30
 categories: ["Tech"]
+tags:
+- RPC
 draft: false
 ---
 
