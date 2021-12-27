@@ -253,6 +253,11 @@ const cities = [
     "latitude": 22.3526738,
     "longitude": 113.9876148,
   },
+  {
+    "title": "Taipei",
+    "latitude": 25.0855451,
+    "longitude": 121.4914614,
+  },
 ];
 for (var i = 0; i < cities.length; ++i){
   cities[i]["zoomLevel"] = 5;
