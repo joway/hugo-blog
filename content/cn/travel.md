@@ -44,6 +44,41 @@ var targetSVG = "M9,0C4.029,0,0,4.029,0,9s4.029,9,9,9s9-4.029,9-9S13.971,0,9,0z 
  */
 const cities = [
   {
+    "title": "Singapore",
+    "latitude": 1.2797704,
+    "longitude": 103.8301444,
+  },
+  {
+    "title": "Johor Bahru",
+    "latitude": 1.5450255,
+    "longitude": 103.6395874,
+  },
+  {
+    "title": "Qatar",
+    "latitude": 22.487030,
+    "longitude": 114.056831,
+  },
+  {
+    "title": "Antalya",
+    "latitude": 36.896893,
+    "longitude": 30.713324,
+  },
+  {
+    "title": "Izmir",
+    "latitude": 38.423733,
+    "longitude": 27.142826,
+  },
+  {
+    "title": "Istanbul",
+    "latitude": 41.0054958,
+    "longitude": 28.8720972,
+  },
+  {
+    "title": "Bangkok",
+    "latitude": 13.7248936,
+    "longitude": 100.493027,
+  },
+  {
     "title": "Takamatsu",
     "latitude": 34.2728006,
     "longitude": 133.9080959,
@@ -52,11 +87,6 @@ const cities = [
     "title": "Shiraz",
     "latitude": 32.8133972,
     "longitude": 52.9099841,
-  },
-  {
-    "title": "Isfahan",
-    "latitude": 34.6930788,
-    "longitude": 52.3530197,
   },
   {
     "title": "Isfahan",
@@ -290,7 +320,28 @@ var map = AmCharts.makeChart( "travelmap", {
     "map": "worldHigh",
     getAreasFromMap: true,
     "images": cities,
-    areas: [{
+    areas: [
+            {
+                "id": "TH",
+                "showAsSelected": true
+            },
+            {
+                "id": "QA",
+                "showAsSelected": true
+            },
+            {
+                "id": "TR",
+                "showAsSelected": true
+            },
+            {
+                "id": "MY",
+                "showAsSelected": true
+            },
+            {
+                "id": "SG",
+                "showAsSelected": true
+            },
+            {
                 "id": "AT",
                 "showAsSelected": true
             },
