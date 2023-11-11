@@ -8,7 +8,7 @@ workflows:
 jobs:
   build:
     docker:
-      - image: circleci/golang:1.15.7
+      - image: cimg/go:1.15.7
     steps:
       - checkout
       - run:
@@ -30,7 +30,7 @@ jobs:
           command: |
             git config --global credential.helper 'cache --timeout=120'
             git config --global user.email "joway.w@gmail.com"
-            git config --global user.name "Joway.CI" 
+            git config --global user.name "Joway.CI"
       - run:
           name: push theme yinyang
           command: |
