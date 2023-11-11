@@ -16,7 +16,7 @@ jobs:
           command: |
             sudo apt update
             sudo apt install -y git minify
-            GO111MODULE=on go get github.com/gohugoio/hugo@v0.120.0
+            go install github.com/gohugoio/hugo@v0.120.0
       - run:
           name: sync git repo
           command: |
