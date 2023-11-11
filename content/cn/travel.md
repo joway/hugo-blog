@@ -44,6 +44,21 @@ var targetSVG = "M9,0C4.029,0,0,4.029,0,9s4.029,9,9,9s9-4.029,9-9S13.971,0,9,0z 
  */
 const cities = [
   {
+    "title": "Yerevan",
+    "latitude": 40.1532347,
+    "longitude": 44.1767442,
+  },
+  {
+    "title": "Tbilisi",
+    "latitude": 41.7278607,
+    "longitude": 44.641956,
+  },
+  {
+    "title": "Baku",
+    "latitude": 40.394737,
+    "longitude": 49.6901516,
+  },
+  {
     "title": "Singapore",
     "latitude": 1.2797704,
     "longitude": 103.8301444,
@@ -52,6 +67,26 @@ const cities = [
     "title": "Johor Bahru",
     "latitude": 1.5450255,
     "longitude": 103.6395874,
+  },
+  {
+    "title": "Sukhothai",
+    "latitude": 17.0028067,
+    "longitude": 99.6865765,
+  },
+  {
+    "title": "Phra Nakhon Si Ayutthaya",
+    "latitude": 14.3305882,
+    "longitude": 99.0300832,
+  },
+  {
+    "title": "Ko Samet",
+    "latitude": 12.5582498,
+    "longitude": 101.4049791,
+  },
+  {
+    "title": "Bintan Island",
+    "latitude": 0.9707737,
+    "longitude": 104.5526826,
   },
   {
     "title": "Qatar",
@@ -142,6 +177,21 @@ const cities = [
     "title": "Chengdu",
     "latitude": 30.6584534,
     "longitude": 103.9354618,
+  },
+  {
+    "title": "Geneva",
+    "latitude": 46.2048629,
+    "longitude": 6.0650997,
+  },
+  {
+    "title": "Basel",
+    "latitude": 47.55465,
+    "longitude": 7.5532045,
+  },
+  {
+    "title": "Lauterbrunnen",
+    "latitude": 46.6032443,
+    "longitude": 7.8400702,
   },
   {
     "title": "Praha",
@@ -322,6 +372,22 @@ var map = AmCharts.makeChart( "travelmap", {
     "images": cities,
     areas: [
             {
+                "id": "AM",
+                "showAsSelected": true
+            },
+            {
+                "id": "AZ",
+                "showAsSelected": true
+            },
+            {
+                "id": "GE",
+                "showAsSelected": true
+            },
+            {
+                "id": "ID",
+                "showAsSelected": true
+            },
+            {
                 "id": "TH",
                 "showAsSelected": true
             },
@@ -339,6 +405,10 @@ var map = AmCharts.makeChart( "travelmap", {
             },
             {
                 "id": "SG",
+                "showAsSelected": true
+            },
+            {
+                "id": "CH",
                 "showAsSelected": true
             },
             {
