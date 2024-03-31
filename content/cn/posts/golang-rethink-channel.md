@@ -1,5 +1,5 @@
 ---
-title: 重新思考 Go：Channel 不是消息队列
+title: 重新思考 Go：Channel 不是「消息队列」
 date: 2024-03-31
 categories: ["Tech"]
 draft: false

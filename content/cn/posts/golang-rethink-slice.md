@@ -1,5 +1,5 @@
 ---
-title: 重新思考 Go：Slice 仅仅只是「操作视图」
+title: 重新思考 Go：Slice 只是「操作视图」
 date: 2024-03-30
 categories: ["Tech"]
 draft: false
