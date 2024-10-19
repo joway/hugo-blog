@@ -27,6 +27,8 @@ categories: ["Travel"]
 
 - 防护层
   - 1 件 Patagonia Boulder Fork Rain Jacket
+  - 1 条 Outdoor Research Ferrosi Convertible Pants
+  - 1 条 KAILAS 徒步裤
 - 中间层
   - 1 件 Patagonia Down Sweater
   - 1 件 Patagonia R1
