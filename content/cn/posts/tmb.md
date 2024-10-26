@@ -40,7 +40,8 @@ categories: ["Travel"]
   - 4 条 Smartwool 美利奴羊毛内裤
 - 徒步装备
   - Hanchor MARL X 轻量化背包
-  - Black Diamond Distance Carbon Z Poles
+  - Salomon X Ultra 4 Mid GTX 徒步鞋
+  - Black Diamond Distance Carbon Z 登山杖
 
 其中，Patagonia 的 Boulder Fork Rain Jacket 配合 Hanchor MARL X 防雨背包，绝对是提升我整段徒步旅程体验最大的装备。在风雨雪交加的情况下，我没有一次用到雨衣和背包防雨罩。在降水量最大的一天，也只是导致了我中间层羽绒个别地方略微湿润，背包里非常潮湿，但是都没有明显进水的迹象。考虑到我非常讨厌行动受限的感觉，这两款装备的互相配合基本能让我在中等程度降雨量的情况下，都维持自由行走的状态。
 
