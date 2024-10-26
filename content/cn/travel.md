@@ -44,6 +44,21 @@ var targetSVG = "M9,0C4.029,0,0,4.029,0,9s4.029,9,9,9s9-4.029,9-9S13.971,0,9,0z 
  */
 const cities = [
   {
+    "title": "La Fouly",
+    "latitude": 45.9283912,
+    "longitude": 7.0880272,
+  },
+  {
+    "title": "Courmayeur",
+    "latitude": 45.7962147,
+    "longitude": 6.9499023,
+  },
+  {
+    "title": "Chamonix",
+    "latitude": 45.9294714,
+    "longitude": 6.7642889,
+  },
+  {
     "title": "Yerevan",
     "latitude": 40.1532347,
     "longitude": 44.1767442,
