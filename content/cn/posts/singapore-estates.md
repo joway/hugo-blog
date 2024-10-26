@@ -1,7 +1,7 @@
 ---
 title: 新加坡房地产漫谈
 date: 2024-10-18
-draft: false
+draft: true
 categories: ["Singapore"]
 ---
 
