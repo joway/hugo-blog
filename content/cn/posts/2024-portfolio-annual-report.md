@@ -13,7 +13,7 @@ draft: false
 
 我不会记录每笔交易，因为不只是投资，生活中处处存在着交易，记账不完整等于没有记账。但是我会大约每个季度花一个小时左右的时间，基于那个时间点的最终资产份额以及价格，构建一个 Snapshot ，这样我可以建立起一个「资产状态」的时间序列：
 
-![](/images/2024-portfolio/0.png)
+![](../images/2024-portfolio/0.png)
 
 基于这些表之间的 Diff，我能够清楚知道任意两个时间段间，我做了哪些有实质性大变化的操作，一些小操作比如个股的小规模买入卖出则会反应在最终资金的盈亏上但是剔除交易本身的细节。
 
@@ -59,15 +59,15 @@ JEPI 是在 SPY 基础上执行 Covered Call 策略的类指数基金。它的�
 
 最后，简单贴下我今年投资账户侧的收益报告：年化收益 17% ，最大月回撤 2.8% 。
 
-![](/images/2024-portfolio/1.jpg)
+![](../images/2024-portfolio/1.jpg)
 
-![](/images/2024-portfolio/2.jpg)
+![](../images/2024-portfolio/2.jpg)
 
-![](/images/2024-portfolio/3.jpg)
+![](../images/2024-portfolio/3.jpg)
 
-![](/images/2024-portfolio/4.jpg)
+![](../images/2024-portfolio/4.jpg)
 
-![](/images/2024-portfolio/5.jpg)
+![](../images/2024-portfolio/5.jpg)
 
 ## 未来展望
 
