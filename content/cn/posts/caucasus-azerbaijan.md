@@ -1,0 +1,92 @@
+---
+title: 高加索三国 - 阿塞拜疆行记
+date: 2025-02-24
+categories: ["Travel"]
+draft: false
+---
+
+我是在 2023 年 9 月 28 号去到的阿塞拜疆，而刚刚在一周多前的 9 月 19 日，阿塞拜疆刚刚针对被亲亚美尼亚势力实际控制的纳卡地区展开了所谓的“反恐行动”，控制了纳戈尔诺-卡拉巴赫(简称纳卡)地区。我在阿塞拜疆的旅程也被笼罩在阿塞拜疆与亚美尼亚的领土争端气氛中展开。
+
+## 纳卡问题
+
+如果你看到纳卡地区的地图，你便知道为什么阿塞拜疆一定要拿下这片土地：
+
+![](/images/azerbaijan/nk-map.png)
+
+纳卡地区就是一块国中国飞地，虽主权也并不归属亚美尼亚，但是其土地上生活的大部分人都是亚美尼亚人。但倘若你再完整看一看阿塞拜疆的地图，可能又会有另一个疑问，这个纳希切万又是哪里来的，为什么也横插进了亚美尼亚的国土里？
+
+![](/images/azerbaijan/az-map.png)
+
+纳希切万恰好就是纳卡地区的反面，虽然身处亚美尼亚腹地但生活的大部分却是阿塞拜疆人，名义上也是连亚美尼亚都承认的阿塞拜疆正统领土。这么一看，亚美尼亚反向申索对纳卡地区的控制似乎又显得没有那么强词夺理了。
+
+纳卡问题历史上发生过大大小小多次战争，总体来说，俄罗斯支持的是亚美尼亚，土耳其支持的是阿塞拜疆，两边都在打着代理人战争，长期以来，阿塞拜疆实际上是被亚美尼亚压着打，属于下风，毕竟整个高加索地区无论从历史还是现实来说都还是俄罗斯人控制的地盘。然而之所以在 2023 年一举被阿塞拜疆拿下纳卡地区，一方面是由于俄罗斯自己都在乌克兰战场自顾不暇，另一方面也是因为此时的亚美尼亚帕希尼扬政府也在寻求渐渐脱离俄罗斯的控制，转向美国甚至寻求加入欧盟，导致俄罗斯对亚美尼亚的态度也发生了逆转。
+
+事实上，以今天发生的现实来说，亚美尼亚这个国家的整体利益已经不能再一直为了另一个国家土地上的亚美尼亚裔人而一直被绑架，为了自身利益不得不放弃了对这块土地的实际控制和支援，然而纳卡飞地上的居民并不这么想，依然坚定认为自己就不属于阿塞拜疆，至少也应该维持自治地位，从而爆发了冲突，但是又孤立无援，进而被阿塞拜疆完全掌控。
+
+## 艺术品中的领土痕迹
+
+前面讲到了阿塞拜疆复杂的领土问题，所以自然阿塞拜疆人在这件事情上也非常敏感。在阿利耶夫文化中心，最让我印象深刻的是一系列用阿塞拜疆的传统工艺——毛毯和纺织——来表达阿塞拜疆完整国土的作品。
+
+![](/images/azerbaijan/art-map1.jpeg)
+![](/images/azerbaijan/art-map2.jpeg)
+
+## 露天的战争博物馆
+
+前面讲到在大部分历史时间里，阿塞拜疆一直是被亚美尼亚压着打，所以长期以来积累了无数的窝火，直到最近几年才胜仗频出，特别是一周多前彻底解决了纳卡问题，所以自然要向民众大肆宣扬战果。但我从来没有见过一个国家会对战争的宣扬像阿塞拜疆这么露骨，直接在市区腾出一大片空地，把真实的战场摆进市区，而且摆的还是亚美尼亚的军营，所有装备素材全部都是从亚美尼亚那里得到的战利品，从床铺，宣传海报到实实在在的坦克军车和飞机，直接 1:1 还原，甚至还建了大量战壕和铁丝网带。从博物馆角度来说，这是我去过的最真实的博物馆。从人性角度来说，看着那些小孩笑嘻嘻地在坦克上爬来爬去，心里很不是滋味。
+
+战利品的意思是，这里每一个军事装备背后至少有一条人命的丧生。
+
+<div class="post-gallery">
+<img src="/images/azerbaijan/war-2.jpeg" />
+<img src="/images/azerbaijan/war-3.jpeg" />
+<img src="/images/azerbaijan/war-4.jpeg" />
+<img src="/images/azerbaijan/war-5.jpeg" />
+<img src="/images/azerbaijan/war-6.jpeg" />
+<img src="/images/azerbaijan/war-7.jpeg" />
+<img src="/images/azerbaijan/war-8.jpeg" />
+<img src="/images/azerbaijan/war-9.jpeg" />
+<img src="/images/azerbaijan/war-10.jpeg" />
+<img src="/images/azerbaijan/war-11.jpeg" />
+<img src="/images/azerbaijan/war-12.jpeg" />
+<img src="/images/azerbaijan/war-13.jpeg" />
+<img src="/images/azerbaijan/war-14.jpeg" />
+<img src="/images/azerbaijan/war-15.jpeg" />
+<img src="/images/azerbaijan/war-16.jpeg" />
+<img src="/images/azerbaijan/war-17.jpeg" />
+<img src="/images/azerbaijan/war-18.jpeg" />
+<img src="/images/azerbaijan/war-19.jpeg" />
+<img src="/images/azerbaijan/war-20.jpeg" />
+<img src="/images/azerbaijan/war-21.jpeg" />
+<img src="/images/azerbaijan/war-22.jpeg" />
+<img src="/images/azerbaijan/war-23.jpeg" />
+<img src="/images/azerbaijan/war-24.jpeg" />
+<img src="/images/azerbaijan/war-25.jpeg" />
+<img src="/images/azerbaijan/war-26.jpeg" />
+</div>
+
+从照片的背景也能看出，这是一个接近市中心的地方，背后是静静地里海。我很难用复仇来形容这种公开的展示，因为大部分前来的阿塞拜疆人都是微笑的，甚至都没有很严肃对待，可能这是我永远无法理解的情感。
+
+## 流油的巴库
+
+阿塞拜疆首都巴库地区是世界上最早开采石油的地方，巴库油田有一个特点是分布分散，这导致这个国家到处都字面意义地在流着石油，也到处可以看到一些小到像是农具的石油钻井，还有一些地方存在着所谓的永恒之火。
+
+![](/images/azerbaijan/oil-1.jpeg)
+![](/images/azerbaijan/gas-1.jpeg)
+![](/images/azerbaijan/gas-2.jpeg)
+
+## 自由的巴库
+
+作为一个伊斯兰国家，巴库的自由程度是我在其他国家所没见过的，甚至是以世俗化著称的土耳其我觉得与之相比都有所逊色。不仅饮食上无所禁忌，甚至在博物馆里，到处都陈列着前卫露骨的艺术作品，在部分街区，有一种来到了巴黎的感觉。而在另一些角落，还能看到一些前苏联审美，更是让这里显得文化更为多元和包容。
+
+![](/images/azerbaijan/art-0.jpeg)
+![](/images/azerbaijan/art-1.jpeg)
+![](/images/azerbaijan/art-2.jpeg)
+![](/images/azerbaijan/art-3.jpeg)
+![](/images/azerbaijan/art-4.jpeg)
+![](/images/azerbaijan/art-5.jpeg)
+
+## 离开阿塞拜疆
+
+事实上，之所以把阿塞拜疆作为高加索三国的第一站，也是因为阿塞拜疆的特殊政治。因为阿塞拜疆对亚美尼亚有着极为强烈的仇恨，导致如果是先去了亚美尼亚，会极难入境阿塞拜疆，而亚美尼亚对阿塞拜疆的旅游经历倒不特别关心。但是这两国之间本身并不开放通行，所以为了去亚美尼亚，还得先到格鲁吉亚中转。
+
+即便你生性不关心政治，但是在高加索，政治才是这里最大的景观。
