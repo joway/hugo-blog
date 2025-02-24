@@ -42,25 +42,17 @@ draft: false
 <img src="/images/azerbaijan/war-4.jpeg" />
 <img src="/images/azerbaijan/war-5.jpeg" />
 <img src="/images/azerbaijan/war-6.jpeg" />
-<img src="/images/azerbaijan/war-7.jpeg" />
-<img src="/images/azerbaijan/war-8.jpeg" />
 <img src="/images/azerbaijan/war-9.jpeg" />
 <img src="/images/azerbaijan/war-10.jpeg" />
 <img src="/images/azerbaijan/war-11.jpeg" />
 <img src="/images/azerbaijan/war-12.jpeg" />
-<img src="/images/azerbaijan/war-13.jpeg" />
-<img src="/images/azerbaijan/war-14.jpeg" />
 <img src="/images/azerbaijan/war-15.jpeg" />
-<img src="/images/azerbaijan/war-16.jpeg" />
 <img src="/images/azerbaijan/war-17.jpeg" />
 <img src="/images/azerbaijan/war-18.jpeg" />
 <img src="/images/azerbaijan/war-19.jpeg" />
-<img src="/images/azerbaijan/war-20.jpeg" />
 <img src="/images/azerbaijan/war-21.jpeg" />
-<img src="/images/azerbaijan/war-22.jpeg" />
 <img src="/images/azerbaijan/war-23.jpeg" />
 <img src="/images/azerbaijan/war-24.jpeg" />
-<img src="/images/azerbaijan/war-25.jpeg" />
 <img src="/images/azerbaijan/war-26.jpeg" />
 </div>
 
@@ -83,7 +75,6 @@ draft: false
 ![](/images/azerbaijan/art-2.jpeg)
 ![](/images/azerbaijan/art-3.jpeg)
 ![](/images/azerbaijan/art-4.jpeg)
-![](/images/azerbaijan/art-5.jpeg)
 
 ## 离开阿塞拜疆
 
