@@ -17,6 +17,8 @@ categories: ["Travel"]
 
 ![](../../images/kumano/route.png)
 
+朝圣盖章：
+
 ![](../../images/kumano/stamp.jpeg)
 
 ## 行前准备
