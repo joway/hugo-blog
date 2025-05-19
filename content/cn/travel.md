@@ -44,6 +44,16 @@ var targetSVG = "M9,0C4.029,0,0,4.029,0,9s4.029,9,9,9s9-4.029,9-9S13.971,0,9,0z 
  */
 const cities = [
   {
+    "title": "Nachikatsuura",
+    "latitude": 33.6308222,
+    "longitude": 135.5736265,
+  },
+  {
+    "title": "Kii-Tanabe",
+    "latitude": 33.7330469,
+    "longitude": 135.3815675,
+  },
+  {
     "title": "La Fouly",
     "latitude": 45.9283912,
     "longitude": 7.0880272,
