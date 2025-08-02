@@ -54,7 +54,7 @@ staticPrefix = "https://cdn.jsdelivr.net/gh/joway/blog"
 # postAds = '<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6400651395935595" data-ad-slot="5705651853" data-ad-format="auto" data-full-width-responsive="true"></ins>'
 lazyImage = true
 
-[[params.author]]
+[params.author]
 homepage = "https://joway.io/"
 name = "Joway"
 
