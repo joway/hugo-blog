@@ -27,6 +27,11 @@ site:
 	find public -type d -print0 | xargs -0 chmod 755
 	find public -type f -print0 | xargs -0 chmod 644
 
+sync-theme:
+	rm -rf ./themes/yinyang
+	git clone --depth=1 git@github.com:joway/hugo-theme-yinyang.git ./themes/yinyang
+	rm -rf ./themes/yinyang/.git
+
 clean:
 	rm -rf public/
 
