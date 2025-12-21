@@ -23,7 +23,7 @@ title = "Random Thoughts"
 unsafe = true
 [markup.highlight]
 guessSyntax = true
-noClasses = true
+noClasses = false
 style = "tango"
 tabWidth = 2
 
