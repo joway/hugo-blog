@@ -44,6 +44,16 @@ var targetSVG = "M9,0C4.029,0,0,4.029,0,9s4.029,9,9,9s9-4.029,9-9S13.971,0,9,0z 
  */
 const cities = [
   {
+    "title": "Kathmandu",
+    "latitude": 27.7089385,
+    "longitude": 85.2481932,
+  },
+  {
+    "title": "Bali",
+    "latitude": -8.4553335,
+    "longitude": 114.7419292,
+  },
+  {
     "title": "Nachikatsuura",
     "latitude": 33.6308222,
     "longitude": 135.5736265,
@@ -396,6 +406,10 @@ var map = AmCharts.makeChart( "travelmap", {
     getAreasFromMap: true,
     "images": cities,
     areas: [
+            {
+                "id": "NP",
+                "showAsSelected": true
+            },
             {
                 "id": "AM",
                 "showAsSelected": true
