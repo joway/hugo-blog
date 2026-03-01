@@ -41,7 +41,7 @@ weight = 2
 post = "/blog/:title/"
 
 [params]
-description = "Log something useless, but interesting." 
+description = "100% human native." 
 disqus = "joway" # disqus account name
 extraHead = '<script async src="https://www.googletagmanager.com/gtag/js?id=UA-53624533-8"></script><script src="https://cdn.jsdelivr.net/gh/joway/homepage/analytics.js"></script>' 
 favicon = "/logo.png" 
