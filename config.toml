@@ -76,5 +76,8 @@ link = "/index.xml"
 link = "/travel"
 name = "Travel"
 [[params.socials]]
+link = "https://animap.elsetech.app/u/joway"
+name = "Animap"
+[[params.socials]]
 link = "https://joway.io"
 name = "About"
