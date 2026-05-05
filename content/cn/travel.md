@@ -44,6 +44,26 @@ var targetSVG = "M9,0C4.029,0,0,4.029,0,9s4.029,9,9,9s9-4.029,9-9S13.971,0,9,0z 
  */
 const cities = [
   {
+    "title": "Penang",
+    "latitude": 5.3110467,
+    "longitude": 100.5128712,
+  },
+  {
+    "title": "Ipoh",
+    "latitude": 4.561711,
+    "longitude": 101.1672261,
+  },
+  {
+    "title": "Cameron Highlands",
+    "latitude": 4.4588822,
+    "longitude": 101.4002164,
+  },
+  {
+    "title": "Kuala Lumpur",
+    "latitude": 3.1386741,
+    "longitude": 101.6045883,
+  },
+  {
     "title": "Kathmandu",
     "latitude": 27.7089385,
     "longitude": 85.2481932,
