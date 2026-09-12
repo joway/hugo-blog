@@ -1,3 +1,7 @@
+/*
+  Referrer-Policy: strict-origin-when-cross-origin
+  X-Frame-Options: SAMEORIGIN
+
 # Processed images carry a content hash in the filename (_hu_xxx), fonts never change.
 /images/*
   Cache-Control: public, max-age=31536000, immutable
