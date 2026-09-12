@@ -6,7 +6,7 @@ categories: ["Tech"]
 draft: false
 ---
 
-# 背景
+## 背景
 
 最近在实现一个随机负载均衡器的时候发现一个问题，在高并发的情况下，官方标准库 `rand.Intn()` 性能会急剧下降。翻了下实现以后才发现它内部居然是全局共享了同一个 [globalRand](https://github.com/golang/go/blob/master/src/math/rand/rand.go#L293) 对象。
 
@@ -40,7 +40,7 @@ BenchmarkCustomRand
 BenchmarkCustomRand-8 423686118 2.38 ns/op
 ```
 
-# 解决思路
+## 解决思路
 
 最理想对情况是可以在每个 goroutine 内创建一个私有的 rand.Rand 对象，从而实现真正的无锁。
 

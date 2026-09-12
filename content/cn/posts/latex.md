@@ -13,7 +13,7 @@ aliases: [
 
 标题致敬 Liam Huang 老师很流行的一篇文章 [《一份其实很短的 LaTeX 入门文档》](https://liam0205.me/2014/09/08/latex-introduction/#%E4%BC%98%E9%9B%85%E7%9A%84_LaTeX) 。
 
-## 什么是 Tex
+### 什么是 Tex
 
 TeX 是高德纳教授在70年代末编写 ***The Art of Computer Programming*** 时，对当时的计算机排版技术感到无法忍受，因而决定自己开发一个高质量的计算机排版系统 TeX 。
 
@@ -32,7 +32,7 @@ TeX 目前(2018年)有如下几个编译引擎:
 
 虽然 Tex 出于向下兼容考虑要求了所有编译器都需要能够编译历史上所有符合标准的 Tex 文件，但并不意味着它不能增加新的功能。TeX 作为一门「宏语言」，能够使用宏定义出新的语法，甚至能够覆盖原先的语法。要理解这一点必须要先理解什么是「宏编程」。
 
-## 什么是宏编程
+### 什么是宏编程
 
 要理解为什么宏如此强大，甚至强大到可以自己定义语法，我们可以来看一个例子 。
 
@@ -80,13 +80,13 @@ define FOR(count, instruction) int __for_count__ = 0; do { __for_count__++ ; ins
 
 回到主题上来，TeX 就像是这里的 D 语言，LaTeX 就是「D+」宏集。LaTeX 本身也都是用 TeX 编译器来实现编译的。
 
-## 宏集和宏包
+### 宏集和宏包
 
 宏集和宏包其实是一堆 TeX 指令集合，宏集以 `.cls` 结尾，宏包以 `.sty` 结尾。宏集需要以 `\documentclass{...}` 来加载，且一个文档一般只使用一个documentclass。而宏包是以`\usepackage{...}`，无使用限制。
 
 正式因为这个区别，所以一般宏集是一个完整的文档格式模板(也称之为「格式format」)，比如武汉大学的论文模板 `\documentclass{whucls}`。而宏集比较灵活，例如你临时需要一些宏包来定义一些特殊字体就可以按需加载宏包。
 
-## 什么是 LaTeX
+### 什么是 LaTeX
 
 LaTeX 就是一种 TeX 宏集，它内嵌了许多常用文档格式，例如 : article、report、book、letter等。使用方式很简单，在 .tex 文件最开头加上 `\documentclass{article}` 即可。
 
@@ -120,13 +120,13 @@ LaTeX 内建了许多新的指令，只需要对相应的段落内容予以其�
 
 这里的 title、section、subsection 都是预先定义的 LaTeX 宏，在宏中已经定义好了样式。当然如果你需要在 LaTeX 宏集的基础上做自己的修改，你也可以基于 LaTeX 宏集做一个单独的宏包。
 
-## 为什么要使用 LaTeX
+### 为什么要使用 LaTeX
 
 我把上面这种写作方式称之为「面向对象写作」。这种设计的优点在于其逻辑完全与实际需求场景相吻合。例如我们在写论文的时候都会拿到一个论文格式规范清单，上面详细规定了什么样的内容需要以什么样的样式来书写。而我们一般使用 Word 时候的方式却是针对所有内容单独一点点地去设立样式。(当然目前 Word 也开始支持这种面向对象赋予格式，但远远没有 LaTeX 那么彻底。)
 
 打个比方，LaTeX 相当于带 `class` 的 CSS , 而 Word 是裸写`<div style="">`。LaTeX 使得作者可以全身心地投入到写作之中，而无需去关心样式，当需要调整排版样式的时候，也仅仅只需修改类型的样式而非文档本身即可。
 
-## 中文支持
+### 中文支持
 
 关于中文支持网上说法非常过时和混乱。这里做一个统一的说明。
 
@@ -153,11 +153,11 @@ CTeX 宏集帮助我们处理好了各种中文排版问题，和操作系统问
 
 虽然理论上当你使用 CTeX 写作时，应当称`该文档使用 CTeX 完成`，但事实上极少会有人这么去说，包括许多说自己在用 TeX 写作的人其实用的也都是 LaTeX 。这种语言上的错误用法大多是因为这个生态其实已经够复杂了，没必要再把人与人之间的交流弄复杂。所以大家统一称这个生态为 LaTeX 。
 
-## 编辑器
+### 编辑器
 
 非计算机专业的人往往会出于一些软件使用习惯，将编译器和编辑器等同来看。相当一部分时候编译器也的确顺带着编译器一起被整合成一个软件。但其实即使是系统自带的文本查看工具也可以称之为编辑器。网上主流的TeX编辑器有: TeX Live 、MiKTeX、CTeX 套件。为方便用户使用，这些软件在安装过程中按自动安装上各个主流的 TeX 编译器版本。当然你也可以使用任意其它编辑器诸如 VS Code 、Atom 、Vim ，使用他们的插件或者手动编译即可。
 
-## 我的 LaTeX 工作方式
+### 我的 LaTeX 工作方式
 
 我个人比较喜欢的是 xelatex 编译器 + VS Code 的编写方式。
 
@@ -169,7 +169,7 @@ CTeX 宏集帮助我们处理好了各种中文排版问题，和操作系统问
 - VS Code LaTex Workshop 插件地址 : [https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop](https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop)
 - VS Code 使用 xelatex 自动编译配置文件 : [https://github.com/joway/latex-template-zh/blob/master/.vscode/settings.json](https://github.com/joway/latex-template-zh/blob/master/.vscode/settings.json)
 
-## 一些 LaTeX 模板
+### 一些 LaTeX 模板
 
 - [latex-template-zh](https://github.com/joway/latex-template-zh) : 我用来写中文文章的模板库，在 ctex 基础上加了一些行间距之类的，使其更加适用于互联网文章的排版。
 - [latex-resume-template](https://github.com/joway/resume) : 我的 LaTeX 简历模板。

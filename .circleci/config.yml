@@ -27,11 +27,6 @@ jobs:
             - hugo-resources-v1-{{ .Branch }}-
             - hugo-resources-v1-
       - run:
-          name: sync git repo
-          command: |
-            git clone --depth 1 https://github.com/joway/blog.git public
-            find ./public -not -name '.git' -mindepth 1 -maxdepth 1 -print0 | xargs -0 rm -rf --
-      - run:
           name: build site
           command: |
             make site
@@ -63,16 +58,16 @@ jobs:
             cd ..
       - deploy:
           name: push newest site
+          # public/ is pushed as a single orphan commit, so the joway/blog repo
+          # only ever holds the current site and never accumulates history.
           command: |
             export msg=$(git log --pretty=format:%s -1)
             cd public
             cp index.xml atom.xml
-            if [ -n "$(git status --porcelain)" ]; then
-              git add .
-              git commit --allow-empty -m "$msg"
-              git push -q https://${GITHUB_TOKEN}@github.com/joway/blog.git master --force
-            else
-              echo "no changes";
-            fi
+            git init -q
+            git checkout -q --orphan master
+            git add .
+            git commit -q -m "$msg"
+            git push -q --force https://${GITHUB_TOKEN}@github.com/joway/blog.git master
     # The resource_class feature allows configuring CPU and RAM resources for each job. Different resource classes are available for different executors. https://circleci.com/docs/2.0/configuration-reference/#resourceclass
     resource_class: large

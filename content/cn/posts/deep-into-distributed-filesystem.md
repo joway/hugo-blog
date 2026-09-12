@@ -10,11 +10,11 @@ draft: false
 
 ![](/images/distributed-filesystem/io-layers.png)
 
-# 本地文件系统
+## 本地文件系统
 
 在讨论分布式文件系统前，我们先来回顾下本地文件系统的组成。
 
-## 存储结构
+### 存储结构
 
 在前面一张图里，我们能够看到文件系统直接和通用块层进行交互，无论底层存储介质是磁盘还是 SSD，都被该层抽象为 **Block** 的概念。文件系统在初始化时，会先在挂载的块存储上的第一个位置创建一个 **Super Block**：
 
@@ -52,7 +52,7 @@ inode 上半部分的 meta data 很容易理解，下半部分的 block 指针�
 
 当 block_size_bytes == 1024 时，最大文件大小为 16 GiB。但当 block_size_bytes == 4096 时，虽然上述公式值为 4 TiB，但由于 ext3 文件系统对单个 inode 上的 blocks 数量`i_blocks` 的类型为 [__le32](https://github.com/spotify/linux/blob/6eb782fc88d11b9f40f3d1d714531f22c57b39f9/include/linux/ext3_fs.h#L298) 即 [__u32](https://github.com/torvalds/linux/blob/master/tools/include/linux/types.h#L56) ，所以单个文件的 blocks 数不能 > `2^32-1` 个，且这里 i_blocks 表示的 block 指的是扇区而非前面说得逻辑块，其大小被固定为 [512 bytes](https://github.com/torvalds/linux/blob/fe7fdc37b5/fs/ext3/super.c#L1436)，所以文件大小不能 > `512 * (2^32 - 1)` ，即约等于2 TiB。扇区是过去磁盘时代的概念，在 SSD 中虽然不存在扇区的概念，但为了兼容旧软件生态，它会提供一个假的扇区值，一般为 4KB。但由于 ext3 该值是写死在[代码](https://github.com/torvalds/linux/blob/fe7fdc37b5/fs/ext3/super.c#L1452)中的，所以即便是 SSD 也存在该限制。
 
-# 分布式文件系统的演化
+## 分布式文件系统的演化
 
 如果我们希望用户对文件的读写操作都通过网络进行而不是本地，以实现多台机器间共享文件状态，通过图1的 IO 流程不难发现，我们只要在文件系统层将其 IO 操作转发给网络上的存储节点而不是本地通用块层，我们就能在应用程序无感知的情况下实现一个分布式文件系统。
 
@@ -63,7 +63,7 @@ inode 上半部分的 meta data 很容易理解，下半部分的 block 指针�
 
 下文介绍的所有分布式文件系统也都是在这两步上做主要取舍和优化，以适应不同应用场景。
 
-## GFS
+### GFS
 
 GFS 是 google 最早为解决其爬虫抓取的网页文件过多而设计的分布式文件系统。
 
@@ -72,7 +72,7 @@ GFS 是 google 最早为解决其爬虫抓取的网页文件过多而设计的�
 - HDFS(开源版实现)
 - TFS: Taobao FileSystem
 
-### 设计目标
+#### 设计目标
 
 GFS 的设计目标是：
 
@@ -80,7 +80,7 @@ GFS 的设计目标是：
 2. 面向大文件设计 (Multi-GB files are common)
 3. 适用于 append 多于 overwrite 的场景
 
-##### 架构
+###### 架构
 
 ![](/images/distributed-filesystem/gfs.png)
 
@@ -106,7 +106,7 @@ GFS 的设计目标是：
 6. secondaries 告知 primary 操作执行完毕
 7. primary 向 client 应答，期间的错误也会发送给 client
 
-### 一致性保证
+#### 一致性保证
 
 对于 metadata 的信息修改一定是一致的，因为 master 是一个单一主节点架构。但对于chuckserver上的写操作在不同情况下有不同的表现：
 
@@ -147,7 +147,7 @@ GFS 的设计目标是：
 
 从上述描述中我们不难发现，GFS 的实现奉行「重客户端轻服务端」思想，把许多原先需要服务端做的校验和保证都交由客户端实现，服务端只做最基本的工作，这种设计思想可以让服务端的实现更加简洁和稳定。
 
-### 缺陷
+#### 缺陷
 
 1. 一个小文件可能会被分配到单一个 chuck 上，从而导致出现读写的热点。
 2. 大量小文件的读写成了随机读写，性能很差
@@ -155,11 +155,11 @@ GFS 的设计目标是：
 4. master 的单点架构容易让 master 自身成为瓶颈
 5. 应用层的一致性保证较差，需要客户端做太多判断
 
-## Colossus: GFS 2.0
+### Colossus: GFS 2.0
 
 由于后来 Google 内部随着规模越来越大，单点的 master 也逐渐支撑不住巨大的集群规模，Google 又研发了新的 Colossus File System。但关于该系统的设计还未公开，网上介绍并不多，这里只从能够找到的资料里来一探究竟。
 
-### 架构
+#### 架构
 
 Colossus 的设计思路是：
 
@@ -211,7 +211,7 @@ M(N*S/B,m)=W(N*S/B,m)=> M(N*S/B*m/B) + C(N*S/B)
 
 从上述推导可以看出，架构嵌套层数越深，最终 Metadata 节点的写入会越来越小。
 
-## Haystack: Design for small files
+### Haystack: Design for small files
 
 上面说的 Google 的两代文件系统都不是专门为小文件而设计的，为解决小文件的需求，Facebook 内部研发了 Haystack 。
 
@@ -227,31 +227,31 @@ M(N*S/B,m)=W(N*S/B,m)=> M(N*S/B*m/B) + C(N*S/B)
 
 由此我们就能够大致理解 Haystack 的设计方向了。
 
-### 架构
+#### 架构
 
 ![](/images/distributed-filesystem/haystack.png)
 
-#### Haystack Directory
+##### Haystack Directory
 
 即 GFS 中的 Master 节点，管理 Metadata 信息。
 
-#### Hystack Cache
+##### Hystack Cache
 
 缓存内部请求的文件，用来缓解热点问题。
 
-#### Hystack Store
+##### Hystack Store
 
 由于 Hystack 已经去掉了文件系统，所以这里把整个 Volume 当作一个大文件来处理。
 
 Store 中存在两种大文件：
 
-##### Store File
+###### Store File
 
 ![](/images/distributed-filesystem/haystack-store-file.png)
 
 每个文件对象为一个 Needle 。
 
-##### Index File
+###### Index File
 
 ![](/images/distributed-filesystem/haystack-index-file.png)
 
@@ -259,7 +259,7 @@ Store 中存在两种大文件：
 
 Index File 可以被完全加载到内存，故而能够大大加快检索效率。一次文件的读取最多也只会在 Store File 侧产生一次 IO 操作。为了实现这点，Haystack 也做了非常多的索引压缩以降低内存占用。
 
-## JuiceFS: Cloud Native Solution
+### JuiceFS: Cloud Native Solution
 
 上面讲的文件系统都是基于私有云的，事实上在现在的公有云架构上，有很多事情已经开始发生了变化，以 AWS 举例：
 
@@ -270,26 +270,26 @@ Index File 可以被完全加载到内存，故而能够大大加快检索效率
 
 JuiceFS 就是专门为此而设计的。
 
-### 架构
+#### 架构
 
 ![](/images/distributed-filesystem/juicefs.png)
 
 ![](/images/distributed-filesystem/juicefs-fuse.png)
 
-#### Metadata Service
+##### Metadata Service
 
 JuiceFS 的 Metadata Service 是一组基于 Raft 协议实现的高可用集群，请求都经由 Leader 节点收发。
 
-#### Object Storage
+##### Object Storage
 
 这里的 Object Storage 即上文的 chunkserver ，在 AWS 上就是 S3。由于 S3 这类对象存储是高可用且能够无限自动扩容的，这种架构的优势在于可以让不用再运维一个 chunkserver 集群。
 
-### 性能
+#### 性能
 
 由于 S3 本身并不是给文件系统设计的，它的 first-byte-out-latency 非常高，一般有 [100–200 ms](https://docs.aws.amazon.com/AmazonS3/latest/dev/optimizing-performance.html) ，所以这种做法对于小文件肯定是完全不适合的。但如果是针对大文件的场景，这个 100 ms的延迟其实影响并不大，由于 S3 本身就是一个分布式的存储，在本地机器带宽足够的情况下，其吞吐量甚至能够达到 100 Gb/s。
 
 对于顺序读与顺序写请求来说，只要本地能够不停地从 metadata service 上预读到后续的 chunk 位置信息，那么其相较于本地文件系统的差异就可以进一步缩小。
 
-### 其他方案：Shared Block Storage
+#### 其他方案：Shared Block Storage
 
 上面说的是用 Object Storage 来实现 chunkserver，还有一种更加另类的实现是，直接在块存储层实现共享，使得上层文件系统直接变成一个分布式的文件系统。目前国内能够看到的也只有[阿里云](https://promotion.aliyun.com/ntms/act/vsan.html?spm=5176.54360.203004.5.GiftLC)开始了内测。

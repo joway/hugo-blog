@@ -58,9 +58,6 @@ favicon = "/logo.png"
 headTitle = "Random Thoughts" 
 mainSections = ["posts"] 
 postFooterContent = '<br/><br/><p>Subscribe：<a target="_blank" href="https://mailchi.mp/a1a0d59e7a19/joway"><b>Mailchimp</b></a></p><br/><a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="Creative Commons License" style="border-width:0" src="/images/cc.png" /></a>' 
-postHeaderContent = "" 
-# extraBody = ''
-# postAds = '<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6400651395935595" data-ad-slot="5705651853" data-ad-format="auto" data-full-width-responsive="true"></ins>'
 
 [params.author]
 homepage = "https://joway.io/"
