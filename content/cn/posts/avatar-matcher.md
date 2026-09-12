@@ -1,6 +1,7 @@
 ---
 title: 从程序到人 —— 情头配对助手的前世今生
 date: 2018-09-27
+lastmod: 2020-06-14
 categories: ["Tech"]
 draft: false
 aliases: [

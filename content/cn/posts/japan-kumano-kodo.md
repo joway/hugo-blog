@@ -1,6 +1,7 @@
 ---
 title: 熊野古道中边路纪行
 date: 2025-05-12
+lastmod: 2025-05-12
 draft: false
 categories: ["Travel"]
 ---

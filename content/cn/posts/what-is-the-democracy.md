@@ -1,6 +1,7 @@
 ---
 title: 民主是什么东西
 date: 2019-08-11
+lastmod: 2020-08-24
 categories: ["Thought"]
 draft: true
 ---

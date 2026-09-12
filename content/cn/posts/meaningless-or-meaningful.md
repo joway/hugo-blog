@@ -1,6 +1,7 @@
 ---
 title: Meaningless or Meaningful
 date: 2020-10-07
+lastmod: 2020-10-07
 categories: ["Thought"]
 draft: false
 ---

@@ -1,6 +1,7 @@
 ---
 title: 警惕靠谱
 date: 2021-01-30
+lastmod: 2021-02-08
 categories: ["Thought"]
 draft: true
 ---

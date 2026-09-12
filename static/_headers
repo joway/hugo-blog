@@ -1,8 +1,5 @@
-/css/*
-  Cache-Control: public, max-age=86400
-/js/*
-  Cache-Control: public, max-age=86400
+# Processed images carry a content hash in the filename (_hu_xxx), fonts never change.
 /images/*
-  Cache-Control: public, max-age=86400
+  Cache-Control: public, max-age=31536000, immutable
 /fonts/*
-  Cache-Control: public, max-age=86400
+  Cache-Control: public, max-age=31536000, immutable

@@ -1,6 +1,7 @@
 ---
 title: 使用 Surge 提升多网络环境下的流畅开发体验
 date: 2018-07-03
+lastmod: 2020-06-14
 categories: ["Tech"]
 draft: false
 aliases: [

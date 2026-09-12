@@ -1,6 +1,7 @@
 ---
 title: Kafka 的设计与实践思考
 date: 2018-04-16
+lastmod: 2020-06-14
 categories: ["Tech"]
 draft: false
 aliases: [

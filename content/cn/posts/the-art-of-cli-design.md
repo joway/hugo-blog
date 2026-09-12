@@ -1,6 +1,7 @@
 ---
 title: "命令行里的设计艺术"
 date: 2019-01-11
+lastmod: 2020-06-14
 categories: ["Tech"]
 draft: false
 ---

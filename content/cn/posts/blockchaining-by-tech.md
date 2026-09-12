@@ -1,6 +1,7 @@
 ---
 title: "去中心化计算系统的发展历史"
 date: 2021-12-05
+lastmod: 2022-04-19
 categories: ["Thought"]
 draft: true
 ---

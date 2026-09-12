@@ -1,6 +1,7 @@
 ---
 title: Golang rand 库锁竞争优化
 date: 2020-12-17
+lastmod: 2021-01-23
 categories: ["Tech"]
 draft: false
 ---

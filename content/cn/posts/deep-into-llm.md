@@ -1,6 +1,7 @@
 ---
 title: LLM 训练与推理的基本理解
 date: 2026-05-17
+lastmod: 2026-05-17
 categories: ["Tech"]
 draft: false
 ---

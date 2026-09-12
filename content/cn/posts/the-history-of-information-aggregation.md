@@ -1,6 +1,7 @@
 ---
 title: 从 SQL 角度看信息媒介的演变
 date: 2021-06-17
+lastmod: 2021-06-21
 draft: true
 categories: ["Thought"]
 ---

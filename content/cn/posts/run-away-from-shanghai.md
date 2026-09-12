@@ -1,6 +1,7 @@
 ---
 title: 那一天，我决定踏出一步
 date: 2022-05-10
+lastmod: 2022-11-28
 categories: ["Thought"]
 draft: false
 ---

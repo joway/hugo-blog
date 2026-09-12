@@ -1,6 +1,7 @@
 ---
 title: 科学，技术与工程
 date: 2021-03-09
+lastmod: 2021-03-09
 categories: ["Thought"]
 draft: false
 ---

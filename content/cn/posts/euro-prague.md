@@ -1,6 +1,7 @@
 ---
 title: 欧游散记 —— 伪君子布拉格
 date: 2018-02-11
+lastmod: 2020-06-14
 draft: false
 categories: ["Travel"]
 aliases: [

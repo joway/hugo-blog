@@ -1,6 +1,7 @@
 ---
 title: "定价的艺术"
 date: 2020-06-05
+lastmod: 2021-06-15
 categories: ["Thought"]
 draft: true
 ---

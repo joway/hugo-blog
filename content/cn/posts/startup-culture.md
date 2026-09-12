@@ -1,6 +1,7 @@
 ---
 title: 创业公司的文化
 date: 2020-03-02
+lastmod: 2020-06-14
 categories: ["Thought"]
 draft: false
 ---

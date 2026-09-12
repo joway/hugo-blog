@@ -1,6 +1,7 @@
 ---
 title: "大公司与创业公司的 AI Coding 体验差异"
 date: 2026-08-13
+lastmod: 2026-08-14
 categories: ["Thought"]
 draft: false
 ---

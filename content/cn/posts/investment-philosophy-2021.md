@@ -1,6 +1,7 @@
 ---
 title: 计算资产
 date: 2021-09-09
+lastmod: 2022-04-19
 categories: ["Thought"]
 draft: true
 ---

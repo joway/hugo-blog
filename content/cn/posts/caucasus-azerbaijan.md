@@ -1,6 +1,7 @@
 ---
 title: 高加索三国 - 阿塞拜疆行记
 date: 2025-02-24
+lastmod: 2025-02-24
 categories: ["Travel"]
 draft: false
 ---

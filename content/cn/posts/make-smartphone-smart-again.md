@@ -1,6 +1,7 @@
 ---
 title: Make Smartphone Smart Again
 date: 2019-01-08
+lastmod: 2020-06-14
 categories: ["Tech"]
 draft: true
 ---

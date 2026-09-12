@@ -1,6 +1,7 @@
 ---
 title: 欧游散记 —— 西班牙
 date: 2018-03-03
+lastmod: 2020-06-14
 draft: false
 categories: ["Travel"]
 aliases: [

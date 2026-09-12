@@ -1,6 +1,7 @@
 ---
 title: "少数价值"
 date: 2022-04-19
+lastmod: 2022-04-19
 categories: ["Thought"]
 draft: false
 ---

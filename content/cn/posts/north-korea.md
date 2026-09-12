@@ -1,6 +1,7 @@
 ---
 title: 朝鲜 —— 小国寡民的主体思想实践
 date: 2018-07-07
+lastmod: 2020-06-14
 categories: ["Travel"]
 draft: false
 aliases: [

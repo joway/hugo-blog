@@ -1,6 +1,7 @@
 ---
 title: 自由意志下的选择
 date: 2019-01-02
+lastmod: 2020-08-24
 categories: ["Thought"]
 draft: false
 tags:

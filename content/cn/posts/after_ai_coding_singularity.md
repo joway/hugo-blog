@@ -1,6 +1,7 @@
 ---
 title: "写在 AI Coding 奇点之后"
 date: 2026-02-26
+lastmod: 2026-02-26
 categories: ["Thought"]
 draft: false
 ---

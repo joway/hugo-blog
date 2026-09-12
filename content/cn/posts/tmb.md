@@ -1,6 +1,7 @@
 ---
 title: 欧游散记 —— 环勃朗峰之旅
 date: 2024-10-18
+lastmod: 2024-10-26
 draft: false
 categories: ["Travel"]
 ---

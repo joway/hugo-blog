@@ -1,6 +1,7 @@
 ---
 title: "欧游散记 —— 德国国会大厦"
 date: 2018-03-02
+lastmod: 2020-06-14
 draft: false
 categories: ["Travel"]
 aliases: [

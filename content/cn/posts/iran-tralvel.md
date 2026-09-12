@@ -1,6 +1,7 @@
 ---
 title: 伊朗见闻录
 date: 2019-12-14
+lastmod: 2020-06-14
 categories: ["Travel"]
 draft: false
 ---

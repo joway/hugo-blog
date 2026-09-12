@@ -1,6 +1,7 @@
 ---
 title: 欧游散记 —— 维也纳
 date: 2018-03-04
+lastmod: 2020-06-14
 draft: false
 categories: ["Travel"]
 aliases: [

@@ -1,6 +1,7 @@
 ---
 title: "以技术视角审视 Web 3.0 的可能性"
 date: 2021-12-05
+lastmod: 2022-04-19
 categories: ["Thought"]
 draft: true
 ---

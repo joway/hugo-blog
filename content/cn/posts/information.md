@@ -1,6 +1,7 @@
 ---
 title: "信息"
 date: 2020-03-18
+lastmod: 2020-06-14
 categories: ["Tech"]
 draft: true
 ---

@@ -1,6 +1,7 @@
 ---
 title: 尼泊尔布恩山小环线纪行
 date: 2026-01-11
+lastmod: 2026-01-13
 draft: false
 categories: ["Travel"]
 ---

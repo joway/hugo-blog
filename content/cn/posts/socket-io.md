@@ -1,6 +1,7 @@
 ---
 title: 即刻多端实时通信实践
 date: 2018-09-18
+lastmod: 2020-06-14
 categories: ["Tech"]
 draft: false
 aliases: [

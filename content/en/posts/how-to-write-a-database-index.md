@@ -1,6 +1,7 @@
 ---
 title: "How to write a Database - Index"
 date: 2019-07-23
+lastmod: 2020-03-17
 categories: ["Talk"]
 draft: false
 ---

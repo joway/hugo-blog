@@ -1,6 +1,7 @@
 ---
 title: "欧游散记 —— 民主专制下的德国"
 date: 2018-03-07
+lastmod: 2020-06-14
 draft: false
 categories: ["Travel"]
 aliases: [

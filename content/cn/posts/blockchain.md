@@ -1,6 +1,7 @@
 ---
 title: "从非技术视角观察区块链"
 date: 2021-12-04
+lastmod: 2022-04-19
 categories: ["Thought"]
 draft: true
 ---

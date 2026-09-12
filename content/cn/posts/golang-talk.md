@@ -1,6 +1,7 @@
 ---
 title: "Golang : Make Programming Happy Again"
 date: 2017-12-30
+lastmod: 2020-06-14
 categories: ["Tech"]
 draft: false
 ---

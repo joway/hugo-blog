@@ -1,6 +1,7 @@
 ---
 title: 欧游散记 —— 特摩索斯古城
 date: 2024-04-07
+lastmod: 2024-04-07
 draft: false
 categories: ["Travel"]
 ---

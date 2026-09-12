@@ -1,6 +1,7 @@
 ---
 title: "ElasticSearch 最佳实践"
 date: 2017-05-28
+lastmod: 2020-06-14
 categories: ["Tech"]
 draft: false
 aliases: [

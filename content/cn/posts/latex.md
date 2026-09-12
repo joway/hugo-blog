@@ -1,6 +1,7 @@
 ---
 title: 一份其实好吃的 LaTeX 入门餐
 date: 2018-05-13
+lastmod: 2020-06-14
 categories: ["Tech"]
 draft: false
 aliases: [

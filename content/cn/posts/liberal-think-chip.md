@@ -1,6 +1,7 @@
 ---
 title: 关于自由的偏见
 date: 2018-04-05
+lastmod: 2020-09-22
 categories: ["Thought"]
 draft: true
 aliases: [
