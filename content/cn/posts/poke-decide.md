@@ -1,7 +1,7 @@
 ---
 title: "风险与收益的可计算性"
 date: 2021-10-04
-categories: ['Thought']
+categories: ["Thought"]
 draft: true
 ---
 

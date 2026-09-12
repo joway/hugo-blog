@@ -1,7 +1,7 @@
 ---
 title: "如何部署全球网络友好型站点"
 date: 2020-04-27
-categories: ['Tech']
+categories: ["Tech"]
 draft: true
 ---
 

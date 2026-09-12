@@ -1,7 +1,7 @@
 ---
 title: "昨日的世界不再重来"
 date: 2026-03-30
-categories: ['Thought']
+categories: ["Thought"]
 draft: false
 ---
 

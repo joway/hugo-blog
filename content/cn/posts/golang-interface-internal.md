@@ -1,7 +1,7 @@
 ---
 title: Golang Interface 内部实现
 date: 2021-01-20
-categories: ['Tech']
+categories: ["Tech"]
 draft: false
 ---
 

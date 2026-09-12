@@ -36,25 +36,7 @@ draft: false
 
 战利品的意思是，这里每一个军事装备背后至少有一条人命的丧生。
 
-<div class="post-gallery">
-<img src="/images/azerbaijan/war-2.jpeg" />
-<img src="/images/azerbaijan/war-3.jpeg" />
-<img src="/images/azerbaijan/war-4.jpeg" />
-<img src="/images/azerbaijan/war-5.jpeg" />
-<img src="/images/azerbaijan/war-6.jpeg" />
-<img src="/images/azerbaijan/war-9.jpeg" />
-<img src="/images/azerbaijan/war-10.jpeg" />
-<img src="/images/azerbaijan/war-11.jpeg" />
-<img src="/images/azerbaijan/war-12.jpeg" />
-<img src="/images/azerbaijan/war-15.jpeg" />
-<img src="/images/azerbaijan/war-17.jpeg" />
-<img src="/images/azerbaijan/war-18.jpeg" />
-<img src="/images/azerbaijan/war-19.jpeg" />
-<img src="/images/azerbaijan/war-21.jpeg" />
-<img src="/images/azerbaijan/war-23.jpeg" />
-<img src="/images/azerbaijan/war-24.jpeg" />
-<img src="/images/azerbaijan/war-26.jpeg" />
-</div>
+{{< gallery "azerbaijan/war-2.jpeg" "azerbaijan/war-3.jpeg" "azerbaijan/war-4.jpeg" "azerbaijan/war-5.jpeg" "azerbaijan/war-6.jpeg" "azerbaijan/war-9.jpeg" "azerbaijan/war-10.jpeg" "azerbaijan/war-11.jpeg" "azerbaijan/war-12.jpeg" "azerbaijan/war-15.jpeg" "azerbaijan/war-17.jpeg" "azerbaijan/war-18.jpeg" "azerbaijan/war-19.jpeg" "azerbaijan/war-21.jpeg" "azerbaijan/war-23.jpeg" "azerbaijan/war-24.jpeg" "azerbaijan/war-26.jpeg" >}}
 
 从照片的背景也能看出，这是一个接近市中心的地方，背后是静静地里海。我很难用复仇来形容这种公开的展示，因为大部分前来的阿塞拜疆人都是微笑的，甚至都没有很严肃对待，可能这是我永远无法理解的情感。
 

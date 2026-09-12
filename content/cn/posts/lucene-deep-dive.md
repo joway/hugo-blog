@@ -1,7 +1,7 @@
 ---
 title: 深入理解 Lucene 工作原理
 date: 2018-11-21
-categories: ['Tech']
+categories: ["Tech"]
 draft: true
 ---
 
@@ -20,7 +20,7 @@ Lucene 内部的存储结构自顶向下分为:
 	- TermId: 全局唯一
 4. Posting 里有 ...
 
-![](https://ik.imagekit.io/elsetech/blog/images/lucene-inverted-index.png)
+![](/images/lucene-inverted-index.png)
 
 ### 文件结构
 

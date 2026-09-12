@@ -1,7 +1,7 @@
 ---
 title: 真理的有限性
 date: 2021-01-15
-categories: ['Thought']
+categories: ["Thought"]
 draft: false
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: "从动物森友会聊主机游戏联机机制"
 date: 2020-05-13
-categories: ['Tech']
+categories: ["Tech"]
 draft: false
 ---
 
@@ -47,28 +47,28 @@ draft: false
 
 - Once an internal address (iAddr:iPort) is mapped to an external address (eAddr:ePort), any packets from iAddr:iPort are sent through eAddr:ePort.
 - Any external host can send packets to iAddr:iPort by sending packets to eAddr:ePort.
-![](../../images/how-animal-crossing-online-work/Full_Cone_NAT.png)
+![](/images/how-animal-crossing-online-work/Full_Cone_NAT.png)
 
 **(Address)-restricted-cone NAT**：
 
 - Once an internal address (iAddr:iPort) is mapped to an external address (eAddr:ePort), any packets from iAddr:iPort are sent through eAddr:ePort.
 - An external host (hAddr:any) can send packets to iAddr:iPort by sending packets to eAddr:ePort only if iAddr:iPort has previously sent a packet to hAddr:any. "Any" means the port number doesn't matter.
 
-![](../../images/how-animal-crossing-online-work/Restricted_Cone_NAT.png)
+![](/images/how-animal-crossing-online-work/Restricted_Cone_NAT.png)
 
 **Port-restricted-cone NAT**：
 
 - Once an internal address (iAddr:iPort) is mapped to an external address (eAddr:ePort), any packets from iAddr:iPort are sent through eAddr:ePort.
 - An external host (hAddr:hPort) can send packets to iAddr:iPort by sending packets to eAddr:ePort only if iAddr:iPort has previously sent a packet to hAddr:hPort.
 
-![](../../images/how-animal-crossing-online-work/Port_Restricted_Cone_NAT.png)
+![](/images/how-animal-crossing-online-work/Port_Restricted_Cone_NAT.png)
 
 **Symmetric NAT**
 
 - Each request from the same internal IP address and port to a specific destination IP address and port is mapped to a unique external source IP address and port; if the same internal host sends a packet even with the same source address and port but to a different destination, a different mapping is used.
 - Only an external host that receives a packet from an internal host can send a packet back.
 
-![](../../images/how-animal-crossing-online-work/Symmetric_NAT.png)
+![](/images/how-animal-crossing-online-work/Symmetric_NAT.png)
 
 上述四种 NAT 类型简单归纳就是说：
 

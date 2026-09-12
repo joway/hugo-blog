@@ -1,7 +1,7 @@
 ---
 title: "我"
 date: 2020-04-27
-categories: ['Tech']
+categories: ["Tech"]
 draft: true
 ---
 

@@ -2,7 +2,7 @@
 title: 从 SQL 角度看信息媒介的演变
 date: 2021-06-17
 draft: true
-categories: ['Thought']
+categories: ["Thought"]
 ---
 
 什么是信息？在 [《Looking for Information》](http://www.xxc.idv.tw/dokuwiki/study/case_d._o._2007_._looking_for_information) 一书中有如下定义：

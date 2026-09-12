@@ -1,7 +1,7 @@
 ---
 title: Meaningless or Meaningful
 date: 2020-10-07
-categories: ['Thought']
+categories: ["Thought"]
 draft: false
 ---
 
@@ -25,7 +25,7 @@ draft: false
 
 上海最近有一个木心的美术展，展厅出口处有一张木心的自撰年表：
 
-![](../../images/meaningless-or-meaningful/muxin.jpg)
+![](/images/meaningless-or-meaningful/muxin.jpg)
 
 这是木心的 Linkedin Profile，57岁之前，他是教师，囚犯，美工，但「Who you are」这个问题的答案不在他的职业中，而在他的作品里。
 

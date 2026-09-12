@@ -1,7 +1,7 @@
 ---
 title: 尽职编程：AI Coding 时代的个体产出差异的来源
 date: 2026-08-29
-categories: ['Thought']
+categories: ["Thought"]
 draft: false
 ---
 

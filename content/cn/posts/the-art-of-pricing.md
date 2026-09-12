@@ -1,7 +1,7 @@
 ---
 title: "定价的艺术"
 date: 2020-06-05
-categories: ['Thought']
+categories: ["Thought"]
 draft: true
 ---
 

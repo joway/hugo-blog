@@ -1,7 +1,7 @@
 ---
 title: "命令行里的设计艺术"
 date: 2019-01-11
-categories: ['Tech']
+categories: ["Tech"]
 draft: false
 ---
 

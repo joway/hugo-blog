@@ -9,6 +9,8 @@ jobs:
   build:
     docker:
       - image: cimg/go:1.23
+    environment:
+      HUGO_VERSION: 0.164.0
     steps:
       - checkout
       - run:
@@ -16,7 +18,14 @@ jobs:
           command: |
             sudo apt update
             sudo apt install -y git minify
-            go install github.com/gohugoio/hugo@v0.148.2
+            curl -fsSL -o /tmp/hugo.deb "https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-amd64.deb"
+            sudo dpkg -i /tmp/hugo.deb
+            hugo version
+      # processed images (resources/_gen) are expensive to regenerate; reuse across builds
+      - restore_cache:
+          keys:
+            - hugo-resources-v1-{{ .Branch }}-
+            - hugo-resources-v1-
       - run:
           name: sync git repo
           command: |
@@ -26,6 +35,10 @@ jobs:
           name: build site
           command: |
             make site
+      - save_cache:
+          key: hugo-resources-v1-{{ .Branch }}-{{ .Revision }}
+          paths:
+            - resources/_gen
       - run:
           name: setup git
           command: |

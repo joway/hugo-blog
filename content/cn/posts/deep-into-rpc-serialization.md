@@ -29,7 +29,7 @@ Name 和 Email 分别表示两块独立(或连续，或不连续)的内存空间
 
 ## 序列化过程
 
-![](../../images/rpc-serialization/overview.png)
+![](/images/rpc-serialization/overview.png)
 
 ### 定义接口描述（IDL）
 
@@ -199,7 +199,7 @@ func (m *User) MarshalToSizedBuffer(dAtA []byte) (int, error) {
 
 Varint 的思想很简单，每一个字节有 8 位，最高位表示下一个字节是否还是该数字的一部分，其余 7 位用原码补齐。例如：
 
-![](../../images/rpc-serialization/varuint.png)
+![](/images/rpc-serialization/varuint.png)
 
 但是对于负数而言，最高位一定是 1，所以 varint 编码一定会变成 5 个字节，反而增加了大小。
 

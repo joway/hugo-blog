@@ -1,7 +1,7 @@
 ---
 title: 警惕靠谱
 date: 2021-01-30
-categories: ['Thought']
+categories: ["Thought"]
 draft: true
 ---
 

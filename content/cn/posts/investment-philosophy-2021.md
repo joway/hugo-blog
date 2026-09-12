@@ -1,7 +1,7 @@
 ---
 title: 计算资产
 date: 2021-09-09
-categories: ['Thought']
+categories: ["Thought"]
 draft: true
 ---
 

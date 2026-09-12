@@ -1,7 +1,7 @@
 ---
 title: "少数价值"
 date: 2022-04-19
-categories: ['Thought']
+categories: ["Thought"]
 draft: false
 ---
 

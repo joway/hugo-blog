@@ -1,7 +1,7 @@
 ---
 title: "Pond: Golang 通用对象池"
 date: 2021-01-23
-categories: ['Tech']
+categories: ["Tech"]
 draft: false
 ---
 

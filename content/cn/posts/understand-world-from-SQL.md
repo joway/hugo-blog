@@ -2,7 +2,7 @@
 title: 从 SQL 角度看信息媒介的演变
 date: 2021-06-17
 draft: true
-categories: ['Thought']
+categories: ["Thought"]
 ---
 
 在数据领域有一个叫 SQL (Structured Query Language) 的概念，通俗来说就是用一个结构化的语言描述你期望进行的数据检索和聚合行为。一个典型的 SQL 语句是这样的：

@@ -1,7 +1,7 @@
 ---
 title: "Lemon : Koa 风格的 Python 异步 Web 框架"
 date: 2018-01-08
-categories: ['Tech']
+categories: ["Tech"]
 draft: false
 aliases: [
     "/Lemon/lemon-overview/",
@@ -114,15 +114,15 @@ Lemon 目前还只是一个 alpha 的版本 , 并不建议在生产环境上用�
 
 #### Lemon
 
-![Lemon](https://ik.imagekit.io/elsetech/blog/images/old-blog/1515340517.png?tr=w-1024)
+![Lemon](/images/old-blog/1515340517.png)
 
 #### Sanic
 
-![Sanic](https://ik.imagekit.io/elsetech/blog/images/old-blog/1515340610.png?tr=w-1024)
+![Sanic](/images/old-blog/1515340610.png)
 
 #### Flask
 
-![Flask](https://ik.imagekit.io/elsetech/blog/images/old-blog/1515340570.png?tr=w-1024)
+![Flask](/images/old-blog/1515340570.png)
 
 测试结果很符合预期，因为和 Sanic 用的底层技术都差不多，所以两者性能几乎一样。之后会做更为广泛和专业的测试。
 

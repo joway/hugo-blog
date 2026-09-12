@@ -1,7 +1,7 @@
 ---
 title: 从改名浪潮聊政治正确
 date: 2020-06-14
-categories: ['Thought']
+categories: ["Thought"]
 draft: true
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: 民主是什么东西
 date: 2019-08-11
-categories: ['Thought']
+categories: ["Thought"]
 draft: true
 ---
 

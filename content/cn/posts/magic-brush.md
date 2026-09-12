@@ -1,7 +1,7 @@
 ---
 title: "Magic Brush - 画出你自己的产品宇宙"
 date: 2026-03-05
-categories: ['Product']
+categories: ["Product"]
 draft: false
 ---
 

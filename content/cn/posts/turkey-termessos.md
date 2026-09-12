@@ -13,63 +13,63 @@ categories: ["Travel"]
 
 到达安塔利亚，我们在 Airbnb 上约了一个本地向导 Onder 带我们开车到达北部的居呂克山-特摩索斯国家公园，从国家公园徒步前往特摩索斯所在的山顶。Onder 的本职工作是老师，但十分热爱特摩索斯甚至他的硕士论文写的课题便是特摩索斯，所以业余时间也通过做特摩索斯的向导赚点外快。
 
-![](../../images/turkey/termessos/start.jpeg)
+![](/images/turkey/termessos/start.jpeg)
 
 虽然特摩索斯的城市部分主要集中在半山腰和山顶，但是山底相当于这座城市的郊区，和现代城市的郊区一样，往往是平民的生活聚居地。
 
 首先看到的是城市的宗教区域，哈德良庙，但如今只剩下了一扇门孤零零地在山脚下伫立，既神圣又凄凉：
 
-![](../../images/turkey/termessos/temple_of_hadrian.jpeg)
+![](/images/turkey/termessos/temple_of_hadrian.jpeg)
 
 在哈德良庙的另一边，是居民的墓地区。特摩索斯的墓十分有特色，都是以露天石棺的形式“展览”在地表之上。石棺的雕刻也别有一番讲究。
 
 普通平民的石棺是以两个太阳加中间方块的形式，太阳是特摩索斯的标志，这里也被称之为太阳城：
 
-![](../../images/turkey/termessos/coffin-people.jpeg)
+![](/images/turkey/termessos/coffin-people.jpeg)
 
 而士兵的石棺会在太阳上增加武器的标识，寓意太阳的捍卫者：
 
-![](../../images/turkey/termessos/coffin-soldier.jpeg)
+![](/images/turkey/termessos/coffin-soldier.jpeg)
 
 无论是平民还是士兵的石棺都略显单调和同质，特别是人死后，棺材还会被摆在地表被长久展示，这导致石棺本身变成了一个人生命价值的化身。如果没有钱请不起好的雕刻工匠，就靠战斗获得荣誉来装点自己的石棺。如果有钱，就极尽工匠精湛的工艺让自己的石棺变成华丽的艺术品：
 
-![](../../images/turkey/termessos/coffin-rich.jpeg)
-![](../../images/turkey/termessos/coffin-rich-side.jpeg)
+![](/images/turkey/termessos/coffin-rich.jpeg)
+![](/images/turkey/termessos/coffin-rich-side.jpeg)
 
 又或者是更为有权势的领袖，可以直接在岩壁开凿更为壮阔的仰望式墓藏：
 
-![](../../images/turkey/termessos/coffin-alcetas.jpeg)
+![](/images/turkey/termessos/coffin-alcetas.jpeg)
 
 考虑到两千年后，我们还依然在为他们的石棺赞叹，当初他们的「虚荣」如今也被岁月洗涤成了「实荣」。
 
 沿着山路，陆陆续续会走过众多城墙和古罗马式引水渠，以及如今已不知为何物的废墟：
 
-![](../../images/turkey/termessos/ruins1.jpeg)
-![](../../images/turkey/termessos/wall1.jpeg)
-![](../../images/turkey/termessos/wall2.jpeg)
-![](../../images/turkey/termessos/underground.jpeg)
+![](/images/turkey/termessos/ruins1.jpeg)
+![](/images/turkey/termessos/wall1.jpeg)
+![](/images/turkey/termessos/wall2.jpeg)
+![](/images/turkey/termessos/underground.jpeg)
 
 在半山腰，还能看到一个保存地非常好的体育馆遗址：
 
-![](../../images/turkey/termessos/gym.jpeg)
+![](/images/turkey/termessos/gym.jpeg)
 
 以及曾经的祭坛：
 
-![](../../images/turkey/termessos/heroon.jpeg)
+![](/images/turkey/termessos/heroon.jpeg)
 
 接着便来到了特摩索斯城市最最核心的基础设施 —— 蓄水库：
 
-![](../../images/turkey/termessos/water_saver1.jpeg)
-![](../../images/turkey/termessos/water_saver2.jpeg)
+![](/images/turkey/termessos/water_saver1.jpeg)
+![](/images/turkey/termessos/water_saver2.jpeg)
 
 由于地震已经毁坏了蓄水库很大一部分，所以今天的蓄水库为了维持稳定，能够看到有很多人工固定的痕迹，但是能够两千年前在一个山顶开凿一个如此巨大的地下空间还是非常令人震撼的。
 
 大约花了一小时的路程，便可抵达特摩索斯的山顶，在一个转身间，看到了我在土耳其见过的最震撼的一幕：
 
-![](../../images/turkey/termessos/theater1.jpeg)
-![](../../images/turkey/termessos/theater2.jpeg)
-![](../../images/turkey/termessos/theater3.jpeg)
-![](../../images/turkey/termessos/theater_wide.jpeg)
+![](/images/turkey/termessos/theater1.jpeg)
+![](/images/turkey/termessos/theater2.jpeg)
+![](/images/turkey/termessos/theater3.jpeg)
+![](/images/turkey/termessos/theater_wide.jpeg)
 
 特摩索斯在人类历史上，只是一个非常短暂，也没有名气，更没有对任何历史节点产生重要影响的小城市。特摩索斯的统治者也并非历史上赫赫有名的王侯将相，甚至这座城市更像是纯粹的自治军事城邦而非君主制的王国。但是如此小的城市居然会为了其居民建立如此恢弘的一个剧场。更何况这里不靠近雅典也不靠近罗马，地处希腊世界的边陲。
 
