@@ -18,6 +18,12 @@ title = "Random Thoughts"
 # name = "keywords"
 # weight = 100
 
+[outputs]
+home = ["HTML", "RSS"]
+section = ["HTML"]
+taxonomy = ["HTML"]
+term = ["HTML"]
+
 [frontmatter]
 lastmod = ["lastmod", ":git", "date", "publishDate"]
 
