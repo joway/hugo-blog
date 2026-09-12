@@ -47,7 +47,7 @@ draft: false
 
 ![](/images/nodejs-debug/03.png)
 
-如图标红的是该元素的引用关系，即在代码 `[engine.io/lib/server.js](http://engine.io/lib/server.js)` 中 `nsps(Server)` 对象的 `/notification` 属性下的 `adapter(Namespace)` 属性里的 `sids` 属性中引用了我们选中的对象 72257。sids 的值就是选中的对象。
+如图标红的是该元素的引用关系，即在代码 `[engine.io/lib/server.js](https://engine.io/lib/server.js)` 中 `nsps(Server)` 对象的 `/notification` 属性下的 `adapter(Namespace)` 属性里的 `sids` 属性中引用了我们选中的对象 72257。sids 的值就是选中的对象。
 
 通过查看这个对象，我们能够发现是否存在异常的内容，而通过 Retainers 里的引用关系，我们能够找到该对象在代码中的定位。如果值的内容并无异常，那有可能是 Retainers 里的引用关系导致它一直没有被释放。
 

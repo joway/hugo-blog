@@ -105,7 +105,7 @@ Instagram 现在是伊朗的国民级应用，相当于中国的朋友圈，旅�
 
 虽然大部分游客会认为德黑兰没有什么意思，的确，它虽为首都，却没有其他城市那么多的历史古迹，也没有壮观的自然景色，只有脏乱的街道和匆忙的人群。但德黑兰是我最喜欢的伊朗城市，它是现代伊朗的综合体现，是最能代表伊朗的城市。在这座年轻的城市的公园、马路、商场、郊区，看到的都是未来能够改变伊朗的基因。
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/MNN1etI-Zoc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe loading="lazy" width="560" height="315" src="https://www.youtube.com/embed/MNN1etI-Zoc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## 伊朗故事
 

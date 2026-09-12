@@ -194,7 +194,7 @@ draft: false
 ## 参考资料
 
 - [Wikipedia: Network address translation](https://en.wikipedia.org/wiki/Network_address_translation)
-- [Peer-to-Peer (P2P) communication across middleboxes](http://midcom-p2p.sourceforge.net/draft-ford-midcom-p2p-01.txt)
+- [Peer-to-Peer (P2P) communication across middleboxes](https://midcom-p2p.sourceforge.net/draft-ford-midcom-p2p-01.txt)
 - [网络游戏同步技术概述](https://zhuanlan.zhihu.com/p/56923109)
 
 

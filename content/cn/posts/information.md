@@ -18,7 +18,7 @@ draft: true
 
 在古代，一般信息的传播成本远远高于其获取成本，所以
 
-香农的同事 Weaver 在 [《THE MATHEMATICS OF COMMUNICATION》](http://www.mt-archive.info/50/SciAm-1949-Weaver.pdf) 中的一篇文章里提出将关于通讯的问题分为三个层次：
+香农的同事 Weaver 在 [《THE MATHEMATICS OF COMMUNICATION》](https://www.mt-archive.info/50/SciAm-1949-Weaver.pdf) 中的一篇文章里提出将关于通讯的问题分为三个层次：
 
 > In communication there seem to be
 problems at three levels: 1) technical,

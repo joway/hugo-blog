@@ -294,7 +294,7 @@ Count-Min 算法和布隆过滤器类似，核心思想还是通过将相同 Has
 
 # 参考资料
 
-- [Design Of A Modern Cache](http://highscalability.com/blog/2016/1/25/design-of-a-modern-cache.html)
+- [Design Of A Modern Cache](https://highscalability.com/blog/2016/1/25/design-of-a-modern-cache.html)
 - [TinyLFU: A Highly Efficient Cache Admission Policy](https://arxiv.org/abs/1512.00727)
 - [Introducing Ristretto: A High-Performance Go Cache](https://blog.dgraph.io/post/introducing-ristretto-high-perf-go-cache/)
 - [The State of Caching in Go](https://blog.dgraph.io/post/caching-in-go/)
