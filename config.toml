@@ -2,6 +2,7 @@ DefaultContentLanguage = "cn"
 baseURL = "https://blog.joway.io/"
 canonifyURLs = false
 enableRobotsTXT = true
+disableKinds = ["taxonomy"]
 enableGitInfo = true
 hasCJKLanguage = true
 summaryLength = 120
@@ -20,10 +21,20 @@ title = "Random Thoughts"
 # name = "keywords"
 # weight = 100
 
+# _redirects for Cloudflare Pages, generated from page aliases (real 301s)
+[mediaTypes."text/netlify"]
+delimiter = ""
+suffixes = [""]
+
+[outputFormats.redirects]
+mediaType = "text/netlify"
+baseName = "_redirects"
+isPlainText = true
+notAlternative = true
+
 [outputs]
-home = ["HTML", "RSS"]
+home = ["HTML", "RSS", "redirects"]
 section = ["HTML"]
-taxonomy = ["HTML"]
 term = ["HTML"]
 
 [frontmatter]
