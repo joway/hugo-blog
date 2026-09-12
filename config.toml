@@ -43,7 +43,7 @@ post = "/blog/:title/"
 [params]
 description = "100% human native." 
 disqus = "joway" # disqus account name
-extraHead = '<script async src="https://www.googletagmanager.com/gtag/js?id=UA-53624533-8"></script><script src="https://cdn.jsdelivr.net/gh/joway/homepage/analytics.js"></script><script src="https://mailbike.dev/widget.js" data-app="mb_live_6b2f3a85cd570022" defer></script><script defer src="https://argos.elsetech.app/script.js" data-website-id="92ece2e1-4448-4499-a252-d4a933385f36"></script>' 
+extraHead = '<script async src="https://www.googletagmanager.com/gtag/js?id=UA-53624533-8"></script><script src="https://cdn.jsdelivr.net/gh/joway/homepage/analytics.js"></script><script src="https://mailbike.dev/widget.js" data-app="mb_live_6b2f3a85cd570022" defer></script><script defer src="https://argos.elsetech.app/script.js" data-website-id="92ece2e1-4448-4499-a252-d4a933385f36"></script><script src="https://widget.elsetech.app/aidaily.js" async></script>' 
 favicon = "/logo.png" 
 headTitle = "Random Thoughts" 
 mainSections = ["posts"] 
