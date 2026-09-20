@@ -90,6 +90,9 @@ name = "Subscribe"
 name = "RSS"
 link = "/index.xml"
 [[params.socials]]
+link = "https://x.com/jowaywang"
+name = "X"
+[[params.socials]]
 link = "/travel"
 name = "Travel"
 [[params.socials]]
