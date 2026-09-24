@@ -5,7 +5,7 @@ categories: ["Thought"]
 draft: false
 ---
 
-最近各家公司都发布了自己的 Personal Agent，这应该是我印象里，AI 第一次以纯粹面向普通老百姓的 2C 形态落地。
+最近各家公司都发布了自己的 Personal Agent，这应该是我印象里，Agent 第一次以纯粹面向普通老百姓的 2C 形态落地。
 
 从 openclaw 开始，我体验了各家个人 Agent 形态的产品，包括我自己为我自己写的，以及我自己为公司写的 Agent，我有一种感觉是，个人 Agent 其实是一个伪命题，或者说一个聊天形式的 Agent 并不是面向普罗大众的正确交互接口。下面是我认为的原因。
 
