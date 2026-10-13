@@ -44,6 +44,26 @@ var targetSVG = "M9,0C4.029,0,0,4.029,0,9s4.029,9,9,9s9-4.029,9-9S13.971,0,9,0z 
  */
 const cities = [
   {
+    "title": "Cairo",
+    "latitude": 30.0595563,
+    "longitude": 31.217293,
+  },
+  {
+    "title": "Hurghada",
+    "latitude": 26.9418368,
+    "longitude": 33.4611042,
+  },
+  {
+    "title": "Luxor",
+    "latitude": 25.6950127,
+    "longitude": 32.6182674,
+  },
+  {
+    "title": "Aswan",
+    "latitude": 24.0923724,
+    "longitude": 32.8795066,
+  },
+  {
     "title": "Penang",
     "latitude": 5.3110467,
     "longitude": 100.5128712,
@@ -426,6 +446,10 @@ var map = AmCharts.makeChart( "travelmap", {
     getAreasFromMap: true,
     "images": cities,
     areas: [
+            {
+                "id": "EG",
+                "showAsSelected": true
+            },
             {
                 "id": "NP",
                 "showAsSelected": true
