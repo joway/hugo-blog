@@ -1,6 +1,5 @@
-version: 2
+version: 2.1
 workflows:
-  version: 2
   build-workflow:
     jobs:
       - build:
@@ -56,7 +55,7 @@ jobs:
               echo "no changes";
             fi
             cd ..
-      - deploy:
+      - run:
           name: push newest site
           # public/ is pushed as a single orphan commit, so the joway/blog repo
           # only ever holds the current site and never accumulates history.
